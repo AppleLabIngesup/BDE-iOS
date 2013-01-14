@@ -7,6 +7,7 @@
 //
 
 #import "CIViewController.h"
+#import "IIViewDeckController.h"
 
 @interface CIViewController ()
 
@@ -18,6 +19,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
+    
+    if ([self.navigationItem respondsToSelector:@selector(leftBarButtonItems)]) {
+        self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:
+                                                  [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)],nil];
+    } else {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
+    }
 }
 
 - (void)didReceiveMemoryWarning

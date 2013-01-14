@@ -16,4 +16,8 @@
 
 @property (strong, nonatomic) CIViewController *viewController;
 
+@property (retain, nonatomic) UIViewController *centerController;
+@property (retain, nonatomic) UIViewController *leftController;
+
+
 @end

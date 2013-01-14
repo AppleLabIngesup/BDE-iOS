@@ -7,12 +7,17 @@
 //
 
 #import "CILeftViewController.h"
+#import "CICellViewLeft.h"
+#import "CIViewControllerNews.h"
+#import "IIViewDeckController.h"
 
 @interface CILeftViewController ()
 
 @end
 
 @implementation CILeftViewController
+
+@synthesize menu;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -32,6 +37,15 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    //category menu
+    NSDictionary *category = [[NSDictionary alloc] initWithObjectsAndKeys:@"News",@"cat",@"demo_icon.png",@"img",nil];
+    NSDictionary *category1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Évènements",@"cat",@"demo_icon.png",@"img",nil];
+    NSDictionary *category2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Album",@"cat",@"demo_icon.png",@"img",nil];
+    NSDictionary *category3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Partenaires",@"cat",@"demo_icon.png",@"img",nil];
+    
+    //array menu complet
+    menu = [[NSArray alloc] initWithObjects:category,category1,category2,category3,nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,31 +54,49 @@
     // Dispose of any resources that can be recreated.
 }
 
+// return la hauteur de la cellule custom
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return [menu count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"CICellViewLeft";
+    //on utilise notre cellules personaliser
+    CICellViewLeft *cell = (CICellViewLeft *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        //chargement de la cellule custom
+        NSArray *ixb = [[NSBundle mainBundle] loadNibNamed:@"CICellViewLeft" owner:self options:nil];
+        
+        //parcourir les objets du xib
+        for(id oneObject in ixb){
+            
+            if ([oneObject isKindOfClass:[CICellViewLeft class]]) {
+                cell = (CICellViewLeft *)oneObject;
+            }
+        }
     }
     
-    // Configure the cell...
+    NSDictionary *current = [menu objectAtIndex:indexPath.row];
+    cell.titleCat.text = [current objectForKey:@"cat"];
+    cell.imgCat.image = [UIImage imageNamed:@"demo_icon.png"];
     
     return cell;
 }
@@ -119,6 +151,17 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    
+    switch (indexPath.row) {
+        case 0:
+            self.viewDeckController.centerController = [[CIViewControllerNews alloc] initWithNibName:@"CIViewControllerNews" bundle:nil];
+                self.viewDeckController.closeSlideAnimationDuration = 0.25f;
+                [self.viewDeckController closeOpenView];
+            break;
+            
+        default:
+            break;
+    }
 }
 
 @end

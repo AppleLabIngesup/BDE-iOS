@@ -10,4 +10,6 @@
 
 @interface CILeftViewController : UITableViewController
 
+@property(nonatomic, retain) NSArray *menu;
+
 @end

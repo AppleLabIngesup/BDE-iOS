@@ -10,4 +10,7 @@
 
 @interface CICellViewLeft : UITableViewCell
 
+@property (nonatomic, retain) IBOutlet UILabel *titleCat;
+@property (nonatomic, retain) IBOutlet UIImageView *imgCat;
+
 @end
