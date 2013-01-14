@@ -1,18 +1,18 @@
 //
-//  CIViewControllerNews.m
+//  CIViewControllerEvenement.m
 //  BDE Com'In
 //
 //  Created by chrism on 14/01/13.
 //  Copyright (c) 2013 Ingesup. All rights reserved.
 //
 
-#import "CIViewControllerNews.h"
+#import "CIViewControllerEvenement.h"
 
-@interface CIViewControllerNews ()
+@interface CIViewControllerEvenement ()
 
 @end
 
-@implementation CIViewControllerNews
+@implementation CIViewControllerEvenement
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

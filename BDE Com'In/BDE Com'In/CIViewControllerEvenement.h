@@ -1,5 +1,5 @@
 //
-//  CIViewControllerNews.h
+//  CIViewControllerEvenement.h
 //  BDE Com'In
 //
 //  Created by chrism on 14/01/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CIViewControllerNews : UIViewController
+@interface CIViewControllerEvenement : UIViewController
 
 @end

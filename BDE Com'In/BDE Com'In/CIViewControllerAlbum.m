@@ -1,18 +1,18 @@
 //
-//  CIViewControllerNews.m
+//  CIViewControllerAlbum.m
 //  BDE Com'In
 //
 //  Created by chrism on 14/01/13.
 //  Copyright (c) 2013 Ingesup. All rights reserved.
 //
 
-#import "CIViewControllerNews.h"
+#import "CIViewControllerAlbum.h"
 
-@interface CIViewControllerNews ()
+@interface CIViewControllerAlbum ()
 
 @end
 
-@implementation CIViewControllerNews
+@implementation CIViewControllerAlbum
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
