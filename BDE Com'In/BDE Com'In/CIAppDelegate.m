@@ -25,15 +25,19 @@
     self.leftController = [[CILeftViewController alloc] initWithNibName:@"CILeftViewController" bundle:nil];
     
     CIViewController *centerController = [[CIViewController alloc] initWithNibName:@"CIViewController" bundle:nil];
+    
     self.centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
+    
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:self.centerController
                                                                                     leftViewController:self.leftController];
-    deckController.rightSize = 100;
+    
+    
+    
+    //deckController.rightSize = 100;
     
     /* To adjust speed of open/close animations, set either of these two properties. */
     // deckController.openSlideAnimationDuration = 0.15f;
     // deckController.closeSlideAnimationDuration = 0.5f;
-    
     self.window.rootViewController = deckController;
     [self.window makeKeyAndVisible];
     return YES;

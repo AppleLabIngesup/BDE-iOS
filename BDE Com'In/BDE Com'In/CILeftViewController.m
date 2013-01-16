@@ -9,6 +9,10 @@
 #import "CILeftViewController.h"
 #import "CICellViewLeft.h"
 #import "CIViewControllerNews.h"
+#import "CIViewControllerEvenement.h"
+#import "CIViewControllerAlbum.h"
+#import "CIViewControllerPartenaires.h"
+#import "CIViewController.h"
 #import "IIViewDeckController.h"
 
 @interface CILeftViewController ()
@@ -41,11 +45,12 @@
     //category menu
     NSDictionary *category = [[NSDictionary alloc] initWithObjectsAndKeys:@"News",@"cat",@"demo_icon.png",@"img",nil];
     NSDictionary *category1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Évènements",@"cat",@"demo_icon.png",@"img",nil];
-    NSDictionary *category2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Album",@"cat",@"demo_icon.png",@"img",nil];
+    NSDictionary *category2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Photo",@"cat",@"demo_icon.png",@"img",nil];
     NSDictionary *category3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Partenaires",@"cat",@"demo_icon.png",@"img",nil];
+    NSDictionary *category4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Accueil",@"cat",@"demo_icon.png",@"img",nil];
     
     //array menu complet
-    menu = [[NSArray alloc] initWithObjects:category,category1,category2,category3,nil];
+    menu = [[NSArray alloc] initWithObjects:category4,category,category1,category2,category3,nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -154,9 +159,37 @@
     
     switch (indexPath.row) {
         case 0:
-            self.viewDeckController.centerController = [[CIViewControllerNews alloc] initWithNibName:@"CIViewControllerNews" bundle:nil];
+            self.viewDeckController.centerController = [[CIViewController alloc] initWithNibName:@"CIViewController" bundle:nil];
                 self.viewDeckController.closeSlideAnimationDuration = 0.25f;
-                [self.viewDeckController closeOpenView];
+            [self.viewDeckController closeOpenView];
+            break;
+        case 1:
+            self.viewDeckController.centerController = [[CIViewControllerNews alloc] initWithNibName:@"CIViewControllerNews" bundle:nil];
+            
+            self.viewDeckController.closeSlideAnimationDuration = 0.25f;
+            [self.viewDeckController closeOpenView];
+            
+            break;
+        case 2:
+            self.viewDeckController.centerController = [[CIViewControllerEvenement alloc] initWithNibName:@"CIViewControllerEvenement" bundle:nil];
+            
+            self.viewDeckController.closeSlideAnimationDuration = 0.25f;
+            [self.viewDeckController closeOpenView];
+            
+            break;
+        case 3:
+            self.viewDeckController.centerController = [[CIViewControllerEvenement alloc] initWithNibName:@"CIViewControllerEvenement" bundle:nil];
+            
+            self.viewDeckController.closeSlideAnimationDuration = 0.25f;
+            [self.viewDeckController closeOpenView];
+            
+            break;
+        case 4:
+            self.viewDeckController.centerController = [[CIViewControllerPartenaires alloc] initWithNibName:@"CIViewControllerPartenaires" bundle:nil];
+            
+            self.viewDeckController.closeSlideAnimationDuration = 0.25f;
+            [self.viewDeckController closeOpenView];
+            
             break;
             
         default:

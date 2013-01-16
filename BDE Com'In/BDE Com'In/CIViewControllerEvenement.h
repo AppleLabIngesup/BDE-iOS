@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CIViewControllerEvenement : UIViewController
+- (IBAction)deckMenu:(id)sender;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "CIViewControllerNews.h"
+#import "IIViewDeckController.h"
 
 @interface CIViewControllerNews ()
 
@@ -35,4 +36,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)deeckMenu:(id)sender {
+    
+    [self.viewDeckController toggleLeftViewAnimated:YES];
+}
 @end

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CIViewControllerNews : UIViewController
+- (IBAction)deeckMenu:(id)sender;
 
 @end

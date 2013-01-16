@@ -19,8 +19,14 @@
 		9179A167169D700500D4E960 /* CIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9179A165169D700500D4E960 /* CIViewController.xib */; };
 		9179A16F169DBFDD00D4E960 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179A16E169DBFDD00D4E960 /* MapKit.framework */; };
 		9179A171169DD05F00D4E960 /* LogoComin.png in Resources */ = {isa = PBXBuildFile; fileRef = 9179A170169DD05F00D4E960 /* LogoComin.png */; };
-		9179A17C169DD76B00D4E960 /* CIViewControllerNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9179A17A169DD76B00D4E960 /* CIViewControllerNews.m */; };
-		9179A17D169DD76B00D4E960 /* CIViewControllerNews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9179A17B169DD76B00D4E960 /* CIViewControllerNews.xib */; };
+		9E54405716A49CA7008E3631 /* CIViewControllerNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54405516A49CA7008E3631 /* CIViewControllerNews.m */; };
+		9E54405816A49CA7008E3631 /* CIViewControllerNews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54405616A49CA7008E3631 /* CIViewControllerNews.xib */; };
+		9E54405C16A49F82008E3631 /* CIViewControllerEvenement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54405A16A49F82008E3631 /* CIViewControllerEvenement.m */; };
+		9E54405D16A49F82008E3631 /* CIViewControllerEvenement.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54405B16A49F82008E3631 /* CIViewControllerEvenement.xib */; };
+		9E54406116A4A16F008E3631 /* CIViewControllerAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54405F16A4A16F008E3631 /* CIViewControllerAlbum.m */; };
+		9E54406216A4A16F008E3631 /* CIViewControllerAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54406016A4A16F008E3631 /* CIViewControllerAlbum.xib */; };
+		9E54406616A4A534008E3631 /* CIViewControllerPartenaires.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */; };
+		9E54406716A4A534008E3631 /* CIViewControllerPartenaires.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */; };
 		9EA9F3E616A22DCE006DC3C2 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9F3E116A22DCE006DC3C2 /* IISideController.m */; };
 		9EA9F3E716A22DCE006DC3C2 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9F3E316A22DCE006DC3C2 /* IIViewDeckController.m */; };
 		9EA9F3E816A22DCE006DC3C2 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9F3E516A22DCE006DC3C2 /* IIWrapController.m */; };
@@ -51,9 +57,18 @@
 		9179A16E169DBFDD00D4E960 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9179A170169DD05F00D4E960 /* LogoComin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoComin.png; sourceTree = "<group>"; };
 		9179A174169DD3B200D4E960 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		9179A179169DD76B00D4E960 /* CIViewControllerNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIViewControllerNews.h; path = ../CIViewControllerNews.h; sourceTree = "<group>"; };
-		9179A17A169DD76B00D4E960 /* CIViewControllerNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIViewControllerNews.m; path = ../CIViewControllerNews.m; sourceTree = "<group>"; };
-		9179A17B169DD76B00D4E960 /* CIViewControllerNews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CIViewControllerNews.xib; path = ../CIViewControllerNews.xib; sourceTree = "<group>"; };
+		9E54405416A49CA7008E3631 /* CIViewControllerNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIViewControllerNews.h; path = ../CIViewControllerNews.h; sourceTree = "<group>"; };
+		9E54405516A49CA7008E3631 /* CIViewControllerNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIViewControllerNews.m; path = ../CIViewControllerNews.m; sourceTree = "<group>"; };
+		9E54405616A49CA7008E3631 /* CIViewControllerNews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CIViewControllerNews.xib; path = ../CIViewControllerNews.xib; sourceTree = "<group>"; };
+		9E54405916A49F81008E3631 /* CIViewControllerEvenement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIViewControllerEvenement.h; sourceTree = "<group>"; };
+		9E54405A16A49F82008E3631 /* CIViewControllerEvenement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIViewControllerEvenement.m; sourceTree = "<group>"; };
+		9E54405B16A49F82008E3631 /* CIViewControllerEvenement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerEvenement.xib; sourceTree = "<group>"; };
+		9E54405E16A4A16F008E3631 /* CIViewControllerAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIViewControllerAlbum.h; sourceTree = "<group>"; };
+		9E54405F16A4A16F008E3631 /* CIViewControllerAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIViewControllerAlbum.m; sourceTree = "<group>"; };
+		9E54406016A4A16F008E3631 /* CIViewControllerAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerAlbum.xib; sourceTree = "<group>"; };
+		9E54406316A4A534008E3631 /* CIViewControllerPartenaires.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIViewControllerPartenaires.h; sourceTree = "<group>"; };
+		9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIViewControllerPartenaires.m; sourceTree = "<group>"; };
+		9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerPartenaires.xib; sourceTree = "<group>"; };
 		9EA9F3E016A22DCE006DC3C2 /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
 		9EA9F3E116A22DCE006DC3C2 /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
 		9EA9F3E216A22DCE006DC3C2 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
@@ -157,12 +172,18 @@
 			children = (
 				9EA9F3EA16A22E4C006DC3C2 /* CILeftViewController.h */,
 				9EA9F3EB16A22E4C006DC3C2 /* CILeftViewController.m */,
+				9E54405416A49CA7008E3631 /* CIViewControllerNews.h */,
+				9E54405516A49CA7008E3631 /* CIViewControllerNews.m */,
+				9E54405916A49F81008E3631 /* CIViewControllerEvenement.h */,
+				9E54405A16A49F82008E3631 /* CIViewControllerEvenement.m */,
 				9EA9F3F916A2375F006DC3C2 /* CICellViewLeft.h */,
 				9EA9F3FA16A2375F006DC3C2 /* CICellViewLeft.m */,
 				9179A162169D700500D4E960 /* CIViewController.h */,
 				9179A163169D700500D4E960 /* CIViewController.m */,
-				9179A179169DD76B00D4E960 /* CIViewControllerNews.h */,
-				9179A17A169DD76B00D4E960 /* CIViewControllerNews.m */,
+				9E54405E16A4A16F008E3631 /* CIViewControllerAlbum.h */,
+				9E54405F16A4A16F008E3631 /* CIViewControllerAlbum.m */,
+				9E54406316A4A534008E3631 /* CIViewControllerPartenaires.h */,
+				9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -171,7 +192,10 @@
 			isa = PBXGroup;
 			children = (
 				9EA9F3EC16A22E4C006DC3C2 /* CILeftViewController.xib */,
-				9179A17B169DD76B00D4E960 /* CIViewControllerNews.xib */,
+				9E54405B16A49F82008E3631 /* CIViewControllerEvenement.xib */,
+				9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */,
+				9E54406016A4A16F008E3631 /* CIViewControllerAlbum.xib */,
+				9E54405616A49CA7008E3631 /* CIViewControllerNews.xib */,
 				9179A165169D700500D4E960 /* CIViewController.xib */,
 				9EA9F3FC16A2378B006DC3C2 /* CICellViewLeft.xib */,
 			);
@@ -256,10 +280,13 @@
 				9179A161169D700500D4E960 /* Default-568h@2x.png in Resources */,
 				9179A167169D700500D4E960 /* CIViewController.xib in Resources */,
 				9179A171169DD05F00D4E960 /* LogoComin.png in Resources */,
-				9179A17D169DD76B00D4E960 /* CIViewControllerNews.xib in Resources */,
 				9EA9F3EE16A22E4C006DC3C2 /* CILeftViewController.xib in Resources */,
 				9EA9F3FD16A2378B006DC3C2 /* CICellViewLeft.xib in Resources */,
 				9EA9F40416A2401C006DC3C2 /* demo_icon.png in Resources */,
+				9E54405816A49CA7008E3631 /* CIViewControllerNews.xib in Resources */,
+				9E54405D16A49F82008E3631 /* CIViewControllerEvenement.xib in Resources */,
+				9E54406216A4A16F008E3631 /* CIViewControllerAlbum.xib in Resources */,
+				9E54406716A4A534008E3631 /* CIViewControllerPartenaires.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,12 +300,15 @@
 				9179A157169D700500D4E960 /* main.m in Sources */,
 				9179A15B169D700500D4E960 /* CIAppDelegate.m in Sources */,
 				9179A164169D700500D4E960 /* CIViewController.m in Sources */,
-				9179A17C169DD76B00D4E960 /* CIViewControllerNews.m in Sources */,
 				9EA9F3E616A22DCE006DC3C2 /* IISideController.m in Sources */,
 				9EA9F3E716A22DCE006DC3C2 /* IIViewDeckController.m in Sources */,
 				9EA9F3E816A22DCE006DC3C2 /* IIWrapController.m in Sources */,
 				9EA9F3ED16A22E4C006DC3C2 /* CILeftViewController.m in Sources */,
 				9EA9F3FB16A2375F006DC3C2 /* CICellViewLeft.m in Sources */,
+				9E54405716A49CA7008E3631 /* CIViewControllerNews.m in Sources */,
+				9E54405C16A49F82008E3631 /* CIViewControllerEvenement.m in Sources */,
+				9E54406116A4A16F008E3631 /* CIViewControllerAlbum.m in Sources */,
+				9E54406616A4A534008E3631 /* CIViewControllerPartenaires.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

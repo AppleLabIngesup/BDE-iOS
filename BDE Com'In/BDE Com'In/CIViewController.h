@@ -11,5 +11,6 @@
 
 @interface CIViewController : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *map;
+- (IBAction)deckMenu:(id)sender;
 
 @end

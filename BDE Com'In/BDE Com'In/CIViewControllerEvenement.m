@@ -7,6 +7,8 @@
 //
 
 #import "CIViewControllerEvenement.h"
+#import "IIViewDeckController.h"
+
 
 @interface CIViewControllerEvenement ()
 
@@ -35,4 +37,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)deckMenu:(id)sender {
+    
+    [self.viewDeckController toggleLeftViewAnimated:YES];
+}
 @end
