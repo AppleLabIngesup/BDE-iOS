@@ -178,7 +178,7 @@
             
             break;
         case 3:
-            self.viewDeckController.centerController = [[CIViewControllerEvenement alloc] initWithNibName:@"CIViewControllerEvenement" bundle:nil];
+            self.viewDeckController.centerController = [[CIViewControllerAlbum alloc] initWithNibName:@"CIViewControllerAlbum" bundle:nil];
             
             self.viewDeckController.closeSlideAnimationDuration = 0.25f;
             [self.viewDeckController closeOpenView];
