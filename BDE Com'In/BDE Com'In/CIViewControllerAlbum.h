@@ -10,5 +10,6 @@
 
 @interface CIViewControllerAlbum : UIViewController
 - (IBAction)deckMenu:(id)sender;
+@property (nonatomic, strong) NSArray *dataArray;
 
 @end
