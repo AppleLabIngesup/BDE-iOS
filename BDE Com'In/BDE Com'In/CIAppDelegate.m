@@ -12,6 +12,7 @@
 #import "IIViewDeckController.h"
 #import "CILeftViewController.h"
 
+
 @implementation CIAppDelegate
 
 @synthesize window = _window;
@@ -31,7 +32,9 @@
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:self.centerController
                                                                                     leftViewController:self.leftController];
     
-    
+
+     
+     
     
     //deckController.rightSize = 100;
     

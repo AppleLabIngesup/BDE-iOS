@@ -1,20 +1,18 @@
 //
-//  CIViewControllerAlbum.m
+//  CIViewControllerCollectionAlbum.m
 //  BDE Com'In
 //
-//  Created by chrism on 14/01/13.
+//  Created by chrism on 20/01/13.
 //  Copyright (c) 2013 Ingesup. All rights reserved.
 //
 
-#import "CIViewControllerAlbum.h"
-#import "IIViewDeckController.h"
-#import "CICellViewLeft.h"
+#import "CIViewControllerCollectionAlbum.h"
 
-@interface CIViewControllerAlbum ()
+@interface CIViewControllerCollectionAlbum ()
 
 @end
 
-@implementation CIViewControllerAlbum
+@implementation CIViewControllerCollectionAlbum
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,7 +35,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)deckMenu:(id)sender {
-    [self.viewDeckController toggleLeftViewAnimated:YES];
-}
 @end

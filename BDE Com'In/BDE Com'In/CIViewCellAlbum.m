@@ -1,20 +1,18 @@
 //
-//  CIViewControllerAlbum.m
+//  CIViewCellAlbum.m
 //  BDE Com'In
 //
-//  Created by chrism on 14/01/13.
+//  Created by chrism on 20/01/13.
 //  Copyright (c) 2013 Ingesup. All rights reserved.
 //
 
-#import "CIViewControllerAlbum.h"
-#import "IIViewDeckController.h"
-#import "CICellViewLeft.h"
+#import "CIViewCellAlbum.h"
 
-@interface CIViewControllerAlbum ()
+@interface CIViewCellAlbum ()
 
 @end
 
-@implementation CIViewControllerAlbum
+@implementation CIViewCellAlbum
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,7 +35,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)deckMenu:(id)sender {
-    [self.viewDeckController toggleLeftViewAnimated:YES];
-}
 @end
