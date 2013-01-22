@@ -12,7 +12,6 @@
 #import "IIViewDeckController.h"
 #import "CILeftViewController.h"
 
-
 @implementation CIAppDelegate
 
 @synthesize window = _window;
@@ -26,15 +25,8 @@
     self.leftController = [[CILeftViewController alloc] initWithNibName:@"CILeftViewController" bundle:nil];
     
     CIViewController *centerController = [[CIViewController alloc] initWithNibName:@"CIViewController" bundle:nil];
-    
-    self.centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
-    
-    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:self.centerController
-                                                                                    leftViewController:self.leftController];
-    
-
-     
-     
+   
+    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController leftViewController:self.leftController];
     
     //deckController.rightSize = 100;
     
