@@ -27,12 +27,7 @@
     CIViewController *centerController = [[CIViewController alloc] initWithNibName:@"CIViewController" bundle:nil];
    
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController leftViewController:self.leftController];
-    
-    //deckController.rightSize = 100;
-    
-    /* To adjust speed of open/close animations, set either of these two properties. */
-    // deckController.openSlideAnimationDuration = 0.15f;
-    // deckController.closeSlideAnimationDuration = 0.5f;
+
     self.window.rootViewController = deckController;
     [self.window makeKeyAndVisible];
     return YES;
