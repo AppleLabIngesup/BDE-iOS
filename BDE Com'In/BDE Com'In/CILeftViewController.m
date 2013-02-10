@@ -35,6 +35,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+     self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_Menu.png"]];
+    
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -43,11 +46,11 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     //category menu
-    NSDictionary *category = [[NSDictionary alloc] initWithObjectsAndKeys:@"News",@"cat",@"demo_icon.png",@"img",nil];
+    NSDictionary *category = [[NSDictionary alloc] initWithObjectsAndKeys:@"News",@"cat",@"news.png",@"img",nil];
     NSDictionary *category1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Évènements",@"cat",@"demo_icon.png",@"img",nil];
-    NSDictionary *category2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Photo",@"cat",@"demo_icon.png",@"img",nil];
-    NSDictionary *category3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Partenaires",@"cat",@"demo_icon.png",@"img",nil];
-    NSDictionary *category4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Accueil",@"cat",@"demo_icon.png",@"img",nil];
+    NSDictionary *category2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Photo",@"cat",@"photo.png",@"img",nil];
+    NSDictionary *category3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Partenaires",@"cat",@"partenaire.png",@"img",nil];
+    NSDictionary *category4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Accueil",@"cat",@"home.png",@"img",nil];
     
     //array menu complet
     menu = [[NSArray alloc] initWithObjects:category4,category,category1,category2,category3,nil];
@@ -101,7 +104,7 @@
     
     NSDictionary *current = [menu objectAtIndex:indexPath.row];
     cell.titleCat.text = [current objectForKey:@"cat"];
-    cell.imgCat.image = [UIImage imageNamed:@"demo_icon.png"];
+    cell.imgCat.image = [UIImage imageNamed:[current objectForKey:@"img"]];
     
     return cell;
 }

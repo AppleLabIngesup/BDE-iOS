@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CICollectionCellAlbum : UICollectionViewLayout
+@property (weak, nonatomic) IBOutlet UILabel *TitreEvenement;
 
 @end
