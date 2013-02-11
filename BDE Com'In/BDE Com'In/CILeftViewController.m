@@ -35,9 +35,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+     //image background pour la tableView
      self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_Menu.png"]];
-    
+    //image background du separator tableview
+     self.tableView.separatorColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"separatorCellule.png"]];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

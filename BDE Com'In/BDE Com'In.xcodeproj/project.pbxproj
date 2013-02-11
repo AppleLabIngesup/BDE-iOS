@@ -40,6 +40,7 @@
 		9E69602716B010F10037F18E /* nibCellAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E69602616B010F10037F18E /* nibCellAlbum.xib */; };
 		9E69602B16B016200037F18E /* CICollectionCellAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E69602A16B016200037F18E /* CICollectionCellAlbum.m */; };
 		9E6A92C816AC4455006EC317 /* CIViewControllerCollectionAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A92C616AC4455006EC317 /* CIViewControllerCollectionAlbum.xib */; };
+		9E8668FA16C9081C007462D0 /* separatorCellule.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8668F916C9081C007462D0 /* separatorCellule.png */; };
 		9EA9F3E616A22DCE006DC3C2 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9F3E116A22DCE006DC3C2 /* IISideController.m */; };
 		9EA9F3E716A22DCE006DC3C2 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9F3E316A22DCE006DC3C2 /* IIViewDeckController.m */; };
 		9EA9F3E816A22DCE006DC3C2 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9F3E516A22DCE006DC3C2 /* IIWrapController.m */; };
@@ -108,6 +109,7 @@
 		9E69602916B016200037F18E /* CICollectionCellAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICollectionCellAlbum.h; sourceTree = "<group>"; };
 		9E69602A16B016200037F18E /* CICollectionCellAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICollectionCellAlbum.m; sourceTree = "<group>"; };
 		9E6A92C616AC4455006EC317 /* CIViewControllerCollectionAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerCollectionAlbum.xib; sourceTree = "<group>"; };
+		9E8668F916C9081C007462D0 /* separatorCellule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = separatorCellule.png; sourceTree = "<group>"; };
 		9EA9F3E016A22DCE006DC3C2 /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
 		9EA9F3E116A22DCE006DC3C2 /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
 		9EA9F3E216A22DCE006DC3C2 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 		9EA9F40216A23F66006DC3C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9E8668F916C9081C007462D0 /* separatorCellule.png */,
 				9E43EFD116C8480900902535 /* news.png */,
 				9E43EFD216C8480900902535 /* photo@2x.png */,
 				9E43EFD316C8480900902535 /* photo.png */,
@@ -411,6 +414,7 @@
 				9E43EFDA16C8480A00902535 /* partenaire@2x.png in Resources */,
 				9E43EFDB16C8480A00902535 /* partenaire.png in Resources */,
 				9E43EFDC16C8480A00902535 /* news@2x.png in Resources */,
+				9E8668FA16C9081C007462D0 /* separatorCellule.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
