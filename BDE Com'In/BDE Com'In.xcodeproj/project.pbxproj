@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910F5C2C1702F62200F10889 /* CIViewControllerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F5C2A1702F62200F10889 /* CIViewControllerEvent.m */; };
+		910F5C2D1702F62200F10889 /* CIViewControllerEvent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910F5C2B1702F62200F10889 /* CIViewControllerEvent.xib */; };
+		910F5C301702F8B900F10889 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F5C2F1702F8B900F10889 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9179A14B169D700500D4E960 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179A14A169D700500D4E960 /* UIKit.framework */; };
 		9179A14D169D700500D4E960 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179A14C169D700500D4E960 /* Foundation.framework */; };
 		9179A14F169D700500D4E960 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179A14E169D700500D4E960 /* CoreGraphics.framework */; };
@@ -65,6 +68,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		910F5C291702F62200F10889 /* CIViewControllerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIViewControllerEvent.h; sourceTree = "<group>"; };
+		910F5C2A1702F62200F10889 /* CIViewControllerEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIViewControllerEvent.m; sourceTree = "<group>"; };
+		910F5C2B1702F62200F10889 /* CIViewControllerEvent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerEvent.xib; sourceTree = "<group>"; };
+		910F5C2E1702F8B900F10889 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		910F5C2F1702F8B900F10889 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		9179A146169D700500D4E960 /* BDE Com'In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BDE Com'In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9179A14A169D700500D4E960 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9179A14C169D700500D4E960 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,6 +175,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		910F5C311702F8CC00F10889 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				910F5C2E1702F8B900F10889 /* iCarousel.h */,
+				910F5C2F1702F8B900F10889 /* iCarousel.m */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
 		9179A13B169D700500D4E960 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +216,7 @@
 		9179A150169D700500D4E960 /* BDE Com'In */ = {
 			isa = PBXGroup;
 			children = (
+				910F5C311702F8CC00F10889 /* iCarousel */,
 				9EDF642616AB577B00CEC67B /* PSTCollectionView */,
 				9EA9F40216A23F66006DC3C2 /* Resources */,
 				9EA9F3DF16A22DCE006DC3C2 /* ViewDeck */,
@@ -240,6 +258,8 @@
 				9EA9F3EA16A22E4C006DC3C2 /* CILeftViewController.h */,
 				9EA9F3EB16A22E4C006DC3C2 /* CILeftViewController.m */,
 				9E54405416A49CA7008E3631 /* CIViewControllerNews.h */,
+				910F5C291702F62200F10889 /* CIViewControllerEvent.h */,
+				910F5C2A1702F62200F10889 /* CIViewControllerEvent.m */,
 				9E54405516A49CA7008E3631 /* CIViewControllerNews.m */,
 				9E54405916A49F81008E3631 /* CIViewControllerEvenement.h */,
 				9E54405A16A49F82008E3631 /* CIViewControllerEvenement.m */,
@@ -261,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				9E6A92C616AC4455006EC317 /* CIViewControllerCollectionAlbum.xib */,
+				910F5C2B1702F62200F10889 /* CIViewControllerEvent.xib */,
 				9EA9F3EC16A22E4C006DC3C2 /* CILeftViewController.xib */,
 				9E54405B16A49F82008E3631 /* CIViewControllerEvenement.xib */,
 				9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */,
@@ -415,6 +436,7 @@
 				9E43EFDB16C8480A00902535 /* partenaire.png in Resources */,
 				9E43EFDC16C8480A00902535 /* news@2x.png in Resources */,
 				9E8668FA16C9081C007462D0 /* separatorCellule.png in Resources */,
+				910F5C2D1702F62200F10889 /* CIViewControllerEvent.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +472,8 @@
 				9EDF644A16AB577B00CEC67B /* PSTGridLayoutRow.m in Sources */,
 				9EDF644B16AB577B00CEC67B /* PSTGridLayoutSection.m in Sources */,
 				9E69602B16B016200037F18E /* CICollectionCellAlbum.m in Sources */,
+				910F5C2C1702F62200F10889 /* CIViewControllerEvent.m in Sources */,
+				910F5C301702F8B900F10889 /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
