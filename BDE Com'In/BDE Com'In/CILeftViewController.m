@@ -9,6 +9,7 @@
 #import "CILeftViewController.h"
 #import "CICellViewLeft.h"
 #import "CIViewControllerNews.h"
+#import "CIViewControllerEvent.h"
 #import "CIViewControllerEvenement.h"
 #import "CIViewControllerAlbum.h"
 #import "CIViewControllerPartenaires.h"

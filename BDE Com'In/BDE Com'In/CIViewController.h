@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MapKit/MapKit.h"
+#import "iCarousel.h"
 
-@interface CIViewController : UIViewController
-@property (weak, nonatomic) IBOutlet MKMapView *map;
+@interface CIViewController : UIViewController<iCarouselDataSource, iCarouselDelegate>
 - (IBAction)deckMenu:(id)sender;
-
+@property (strong, nonatomic) IBOutlet iCarousel *carousel;
+@property (strong, nonatomic) NSMutableArray *animals;
+@property (strong, nonatomic) NSMutableArray *descriptions;
+@property (nonatomic) BOOL wrap;
 @end
