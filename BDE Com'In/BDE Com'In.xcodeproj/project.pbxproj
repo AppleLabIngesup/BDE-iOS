@@ -40,8 +40,9 @@
 		9E54406216A4A16F008E3631 /* CIViewControllerAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54406016A4A16F008E3631 /* CIViewControllerAlbum.xib */; };
 		9E54406616A4A534008E3631 /* CIViewControllerPartenaires.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */; };
 		9E54406716A4A534008E3631 /* CIViewControllerPartenaires.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */; };
+		9E5F45C01711D397003E6C7F /* CIControllerCellAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5F45BF1711D397003E6C7F /* CIControllerCellAlbum.m */; };
+		9E5F45C21711D7A8003E6C7F /* CiControllerCellAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5F45C11711D7A8003E6C7F /* CiControllerCellAlbum.xib */; };
 		9E69602716B010F10037F18E /* nibCellAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E69602616B010F10037F18E /* nibCellAlbum.xib */; };
-		9E69602B16B016200037F18E /* CICollectionCellAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E69602A16B016200037F18E /* CICollectionCellAlbum.m */; };
 		9E6A92C816AC4455006EC317 /* CIViewControllerCollectionAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A92C616AC4455006EC317 /* CIViewControllerCollectionAlbum.xib */; };
 		9E8668FA16C9081C007462D0 /* separatorCellule.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8668F916C9081C007462D0 /* separatorCellule.png */; };
 		9EA9F3E616A22DCE006DC3C2 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9F3E116A22DCE006DC3C2 /* IISideController.m */; };
@@ -113,9 +114,10 @@
 		9E54406316A4A534008E3631 /* CIViewControllerPartenaires.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIViewControllerPartenaires.h; sourceTree = "<group>"; };
 		9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIViewControllerPartenaires.m; sourceTree = "<group>"; };
 		9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerPartenaires.xib; sourceTree = "<group>"; };
+		9E5F45BE1711D397003E6C7F /* CIControllerCellAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIControllerCellAlbum.h; sourceTree = "<group>"; };
+		9E5F45BF1711D397003E6C7F /* CIControllerCellAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIControllerCellAlbum.m; sourceTree = "<group>"; };
+		9E5F45C11711D7A8003E6C7F /* CiControllerCellAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CiControllerCellAlbum.xib; sourceTree = "<group>"; };
 		9E69602616B010F10037F18E /* nibCellAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nibCellAlbum.xib; sourceTree = "<group>"; };
-		9E69602916B016200037F18E /* CICollectionCellAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICollectionCellAlbum.h; sourceTree = "<group>"; };
-		9E69602A16B016200037F18E /* CICollectionCellAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICollectionCellAlbum.m; sourceTree = "<group>"; };
 		9E6A92C616AC4455006EC317 /* CIViewControllerCollectionAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerCollectionAlbum.xib; sourceTree = "<group>"; };
 		9E8668F916C9081C007462D0 /* separatorCellule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = separatorCellule.png; sourceTree = "<group>"; };
 		9EA9F3E016A22DCE006DC3C2 /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
@@ -271,8 +273,8 @@
 				9E54405F16A4A16F008E3631 /* CIViewControllerAlbum.m */,
 				9E54406316A4A534008E3631 /* CIViewControllerPartenaires.h */,
 				9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */,
-				9E69602916B016200037F18E /* CICollectionCellAlbum.h */,
-				9E69602A16B016200037F18E /* CICollectionCellAlbum.m */,
+				9E5F45BE1711D397003E6C7F /* CIControllerCellAlbum.h */,
+				9E5F45BF1711D397003E6C7F /* CIControllerCellAlbum.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -290,6 +292,7 @@
 				9179A165169D700500D4E960 /* CIViewController.xib */,
 				9EA9F3FC16A2378B006DC3C2 /* CICellViewLeft.xib */,
 				9E69602616B010F10037F18E /* nibCellAlbum.xib */,
+				9E5F45C11711D7A8003E6C7F /* CiControllerCellAlbum.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				9E43EFDC16C8480A00902535 /* news@2x.png in Resources */,
 				9E8668FA16C9081C007462D0 /* separatorCellule.png in Resources */,
 				910F5C2D1702F62200F10889 /* CIViewControllerEvent.xib in Resources */,
+				9E5F45C21711D7A8003E6C7F /* CiControllerCellAlbum.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,9 +475,9 @@
 				9EDF644916AB577B00CEC67B /* PSTGridLayoutItem.m in Sources */,
 				9EDF644A16AB577B00CEC67B /* PSTGridLayoutRow.m in Sources */,
 				9EDF644B16AB577B00CEC67B /* PSTGridLayoutSection.m in Sources */,
-				9E69602B16B016200037F18E /* CICollectionCellAlbum.m in Sources */,
 				910F5C2C1702F62200F10889 /* CIViewControllerEvent.m in Sources */,
 				910F5C301702F8B900F10889 /* iCarousel.m in Sources */,
+				9E5F45C01711D397003E6C7F /* CIControllerCellAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
