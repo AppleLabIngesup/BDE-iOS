@@ -27,6 +27,12 @@
     CIViewController *centerController = [[CIViewController alloc] initWithNibName:@"CIViewController" bundle:nil];
    
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController leftViewController:self.leftController];
+    
+    //UIImage *imgBck = [[UIImage imageNamed:@"rp_navbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    
+    //[[UINavigationBar appearance] setBackgroundImage:imgBck forBarMetrics:UIBarMetricsDefault];
+
+    //[[UIView appearance] setBackgroundColor:[UIColor redColor]];
 
     self.window.rootViewController = deckController;
     [self.window makeKeyAndVisible];

@@ -11,5 +11,7 @@
 @interface CILeftViewController : UITableViewController
 
 @property(nonatomic, retain) NSArray *menu;
+@property (strong, nonatomic) IBOutlet UITableView *cellViewDeck;
+
 
 @end

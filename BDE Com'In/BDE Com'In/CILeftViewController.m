@@ -36,10 +36,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     //image background pour la tableView
-     self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_Menu.png"]];
+    
+    //self.tableView.backgroundColor = [UIColor blackColor];
     //image background du separator tableview
-     self.tableView.separatorColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"separatorCellule.png"]];
+     //self.tableView.separatorColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"separatorCellule.png"]];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -48,14 +48,18 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     //category menu
-    NSDictionary *category = [[NSDictionary alloc] initWithObjectsAndKeys:@"News",@"cat",@"news.png",@"img",nil];
-    NSDictionary *category1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Évènements",@"cat",@"demo_icon.png",@"img",nil];
-    NSDictionary *category2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Photo",@"cat",@"photo.png",@"img",nil];
-    NSDictionary *category3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Partenaires",@"cat",@"partenaire.png",@"img",nil];
+    NSDictionary *category = [[NSDictionary alloc] initWithObjectsAndKeys:@"Actualité",@"cat",@"news.png",@"img",nil];
+    NSDictionary *category1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Évènements",@"cat",@"event.png",@"img",nil];
+    NSDictionary *category2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Photo",@"cat",@"photos.png",@"img",nil];
+    NSDictionary *category3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Partenaires",@"cat",@"partners.png",@"img",nil];
     NSDictionary *category4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Accueil",@"cat",@"home.png",@"img",nil];
     
     //array menu complet
     menu = [[NSArray alloc] initWithObjects:category4,category,category1,category2,category3,nil];
+    
+    //UIEdgeInsets inset = UIEdgeInsetsMake(70, 0, 0, 0);
+    //self.tableView.contentInset = inset; 
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -79,7 +83,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     // Return the number of rows in the section.
     return [menu count];
 }
@@ -91,7 +94,6 @@
     CICellViewLeft *cell = (CICellViewLeft *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         //chargement de la cellule custom
         NSArray *ixb = [[NSBundle mainBundle] loadNibNamed:@"CICellViewLeft" owner:self options:nil];
         
@@ -105,8 +107,43 @@
     }
     
     NSDictionary *current = [menu objectAtIndex:indexPath.row];
-    cell.titleCat.text = [current objectForKey:@"cat"];
-    cell.imgCat.image = [UIImage imageNamed:[current objectForKey:@"img"]];
+    
+    [cell.imageView setFrame:CGRectMake(20, 0, 0, 0)];
+    
+    [cell.titleCat setText:[current objectForKey:@"cat"]];
+    [cell.imgCat setImage:[UIImage imageNamed:[current objectForKey:@"img"]]];
+    [cell.titleCat setTextColor:[UIColor blackColor]]; 
+    [cell.imgCat setFrame:CGRectMake(20, 15, 30, 30)]; 
+    [cell.titleCat setFont:[UIFont fontWithName:@"Helvetica-Bold" size:20.0f]];
+    
+    
+    UIView *theView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 4, 70)];
+    
+    switch (indexPath.row) {
+        case 0:
+            [theView setBackgroundColor:[UIColor colorWithRed:(52/255.0) green:(152/255.0) blue:(219/255.0) alpha:1]];
+            [cell.contentView addSubview:theView];
+            break;
+        case 1:
+            [theView setBackgroundColor:[UIColor colorWithRed:(155/255.0) green:(89/255.0) blue:(182/255.0) alpha:1]];
+            [cell.contentView addSubview:theView];
+            break;
+        case 2:
+            [theView setBackgroundColor:[UIColor colorWithRed:(231/255.0) green:(76/255.0) blue:(60/255.0) alpha:1]];
+            [cell.contentView addSubview:theView];
+            break;
+        case 3:
+            [theView setBackgroundColor:[UIColor colorWithRed:(46/255.0) green:(204/255.0) blue:(113/255.0) alpha:1]];
+            [cell.contentView addSubview:theView];
+            break;
+        case 4:
+            [theView setBackgroundColor:[UIColor colorWithRed:(230/255.0) green:(126/255.0) blue:(34/255.0) alpha:1]];
+            [cell.contentView addSubview:theView];
+            break;
+            
+        default:
+            break;
+    }
     
     return cell;
 }
@@ -202,4 +239,8 @@
     }
 }
 
+- (void)viewDidUnload {
+    [self setCellViewDeck:nil];
+    [super viewDidUnload];
+}
 @end

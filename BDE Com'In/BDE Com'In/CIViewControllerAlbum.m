@@ -40,7 +40,11 @@
     //[self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"CIControllerCellAlbum"];
     /* end of nib-based cells block */
     
-    [self.collectionView registerNib:[UINib nibWithNibName:@"CIControllerCellAlbum" bundle:nil] forCellWithReuseIdentifier:@"CIControllerCellAlbum"];
+    //[self.collectionView registerNib:[UINib nibWithNibName:@"CIControllerCellAlbum" bundle:nil] forCellWithReuseIdentifier:@"CIControllerCellAlbum"];
+    
+    [self.collectionView registerClass:[CIControllerCellAlbum class] forCellWithReuseIdentifier:@"CIControllerCellAlbum"];
+    
+    
     /* end of subclass-based cells block */
     // Configure layout
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -86,11 +90,13 @@
     /* Uncomment this block to use subclass-based cells */
     /*CIControllerCellAlbum *cell = (CIControllerCellAlbum *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];*/
     
-    CIControllerCellAlbum *cell = (CIControllerCellAlbum *)[self.collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    CIControllerCellAlbum *cell = (CIControllerCellAlbum *)[_collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
     NSMutableArray *data = [self.dataArray objectAtIndex:indexPath.section];
     NSString *cellData = [data objectAtIndex:indexPath.row];
     [cell.titleLabel setText:cellData];
+    
+    
     /* end of subclass-based cells block */
     
     // Return the cell

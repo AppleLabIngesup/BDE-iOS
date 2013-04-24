@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CIViewControllerPartenaires : UIViewController
+@interface CIViewControllerPartenaires : UIViewController<UIScrollViewDelegate>
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollPartners;
+@property (strong, nonatomic) IBOutlet UIView *viewPartners;
+@property (strong, nonatomic) IBOutlet UILabel *labelPartners;
+
+
 - (IBAction)deckMenu:(id)sender;
 
 @end
