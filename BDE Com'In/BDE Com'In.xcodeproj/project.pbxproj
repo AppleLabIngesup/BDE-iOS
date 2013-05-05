@@ -19,6 +19,8 @@
 		9179A164169D700500D4E960 /* CIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9179A163169D700500D4E960 /* CIViewController.m */; };
 		9179A167169D700500D4E960 /* CIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9179A165169D700500D4E960 /* CIViewController.xib */; };
 		9179A16F169DBFDD00D4E960 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179A16E169DBFDD00D4E960 /* MapKit.framework */; };
+		9E1BE4691736FE5F005D6AE3 /* CICellCustomAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE4681736FE5F005D6AE3 /* CICellCustomAlbum.m */; };
+		9E1BE46B1736FF93005D6AE3 /* CICellCustomAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E1BE46A1736FF93005D6AE3 /* CICellCustomAlbum.xib */; };
 		9E54405716A49CA7008E3631 /* CIViewControllerNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54405516A49CA7008E3631 /* CIViewControllerNews.m */; };
 		9E54405816A49CA7008E3631 /* CIViewControllerNews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54405616A49CA7008E3631 /* CIViewControllerNews.xib */; };
 		9E54405C16A49F82008E3631 /* CIViewControllerEvenement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54405A16A49F82008E3631 /* CIViewControllerEvenement.m */; };
@@ -87,6 +89,9 @@
 		9179A163169D700500D4E960 /* CIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIViewController.m; sourceTree = "<group>"; };
 		9179A166169D700500D4E960 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CIViewController.xib; sourceTree = "<group>"; };
 		9179A16E169DBFDD00D4E960 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9E1BE4671736FE5F005D6AE3 /* CICellCustomAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICellCustomAlbum.h; sourceTree = "<group>"; };
+		9E1BE4681736FE5F005D6AE3 /* CICellCustomAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICellCustomAlbum.m; sourceTree = "<group>"; };
+		9E1BE46A1736FF93005D6AE3 /* CICellCustomAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CICellCustomAlbum.xib; sourceTree = "<group>"; };
 		9E54405416A49CA7008E3631 /* CIViewControllerNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIViewControllerNews.h; path = ../CIViewControllerNews.h; sourceTree = "<group>"; };
 		9E54405516A49CA7008E3631 /* CIViewControllerNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIViewControllerNews.m; path = ../CIViewControllerNews.m; sourceTree = "<group>"; };
 		9E54405616A49CA7008E3631 /* CIViewControllerNews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CIViewControllerNews.xib; path = ../CIViewControllerNews.xib; sourceTree = "<group>"; };
@@ -272,6 +277,8 @@
 				9E54405F16A4A16F008E3631 /* CIViewControllerAlbum.m */,
 				9E54406316A4A534008E3631 /* CIViewControllerPartenaires.h */,
 				9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */,
+				9E1BE4671736FE5F005D6AE3 /* CICellCustomAlbum.h */,
+				9E1BE4681736FE5F005D6AE3 /* CICellCustomAlbum.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -289,6 +296,7 @@
 				9E54405616A49CA7008E3631 /* CIViewControllerNews.xib */,
 				9179A165169D700500D4E960 /* CIViewController.xib */,
 				9EA9F3FC16A2378B006DC3C2 /* CICellViewLeft.xib */,
+				9E1BE46A1736FF93005D6AE3 /* CICellCustomAlbum.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -461,6 +469,7 @@
 				ADD3978C17157072001AC6C3 /* CIViewControllerPartnerview.xib in Resources */,
 				ADD3978F1715B0B9001AC6C3 /* Sketch_Block.ttf in Resources */,
 				ADD3979C1716A2C6001AC6C3 /* rp_navbar.png in Resources */,
+				9E1BE46B1736FF93005D6AE3 /* CICellCustomAlbum.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +507,7 @@
 				910F5C2C1702F62200F10889 /* CIViewControllerEvent.m in Sources */,
 				910F5C301702F8B900F10889 /* iCarousel.m in Sources */,
 				ADD3978B17157072001AC6C3 /* CIViewControllerPartnerview.m in Sources */,
+				9E1BE4691736FE5F005D6AE3 /* CICellCustomAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

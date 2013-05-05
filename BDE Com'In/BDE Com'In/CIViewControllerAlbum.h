@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CIViewControllerAlbum : UIViewController
+@interface CIViewControllerAlbum : UITableViewController
 - (IBAction)deckMenu:(id)sender;
-@property (nonatomic, strong) NSArray *dataArray;
-@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
+
 
 @end
