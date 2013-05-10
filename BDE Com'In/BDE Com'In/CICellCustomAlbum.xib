@@ -42,7 +42,7 @@
 							<object class="IBUIImageView" id="349071351">
 								<reference key="NSNextResponder" ref="541336719"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{13, 0}, {134, 136}}</string>
+								<string key="NSFrame">{{13, 5}, {134, 125}}</string>
 								<reference key="NSSuperview" ref="541336719"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="223775889"/>
@@ -53,16 +53,15 @@
 							<object class="IBUIImageView" id="223775889">
 								<reference key="NSNextResponder" ref="541336719"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{191, 0}, {134, 136}}</string>
+								<string key="NSFrame">{{175, 5}, {134, 125}}</string>
 								<reference key="NSSuperview" ref="541336719"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
 						</array>
-						<string key="NSFrameSize">{340, 136}</string>
+						<string key="NSFrameSize">{321, 136}</string>
 						<reference key="NSSuperview" ref="190071193"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="349071351"/>
@@ -78,7 +77,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{340, 137}</string>
+				<string key="NSFrameSize">{321, 137}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="541336719"/>
@@ -94,9 +93,17 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">pictureAlbum</string>
 						<reference key="source" ref="190071193"/>
+						<reference key="destination" ref="349071351"/>
+					</object>
+					<int key="connectionID">8</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">pictureAlbum1</string>
+						<reference key="source" ref="190071193"/>
 						<reference key="destination" ref="223775889"/>
 					</object>
-					<int key="connectionID">6</int>
+					<int key="connectionID">9</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -152,7 +159,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">6</int>
+			<int key="maxID">9</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

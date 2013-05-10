@@ -117,7 +117,6 @@
 						<string key="NSFrame">{{130, 11}, {61, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -322,7 +321,7 @@
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">CIViewControllerAlbum</string>
-					<string key="superclassName">UIViewController</string>
+					<string key="superclassName">UITableViewController</string>
 					<object class="NSMutableDictionary" key="actions">
 						<string key="NS.key.0">deckMenu:</string>
 						<string key="NS.object.0">id</string>
@@ -332,17 +331,6 @@
 						<object class="IBActionInfo" key="NS.object.0">
 							<string key="name">deckMenu:</string>
 							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">collectionView</string>
-						<string key="NS.object.0">UICollectionView</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">collectionView</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">collectionView</string>
-							<string key="candidateClassName">UICollectionView</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
