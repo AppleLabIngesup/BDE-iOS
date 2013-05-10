@@ -89,4 +89,8 @@
     [self setCollectionView:nil];
     [super viewDidUnload];
 }
+- (IBAction)deckMenu:(id)sender {
+    
+    [self.viewDeckController toggleLeftViewAnimated:YES];
+}
 @end
