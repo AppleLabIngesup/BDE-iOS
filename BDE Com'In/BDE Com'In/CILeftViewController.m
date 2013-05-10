@@ -13,6 +13,7 @@
 #import "CIViewControllerEvenement.h"
 //#import "CIViewControllerAlbum.h"
 #import "CITableView.h"
+#import "CIAlbum.h"
 #import "CIViewControllerPartenaires.h"
 #import "CIViewController.h"
 #import "IIViewDeckController.h"
@@ -221,7 +222,8 @@
             
             break;
         case 3:
-            self.viewDeckController.centerController = [[CITableView alloc] initWithNibName:@"CITableView" bundle:nil];
+            //self.viewDeckController.centerController = [[CITableView alloc] initWithNibName:@"CITableView" bundle:nil];
+            self.viewDeckController.centerController = [[CIAlbum alloc] initWithNibName:@"CIAlbum" bundle:nil];
             
             self.viewDeckController.closeSlideAnimationDuration = 0.25f;
             [self.viewDeckController closeOpenView];
