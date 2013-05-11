@@ -35,8 +35,8 @@
     albums = nil;
     //albums = [[NSArray alloc] initWithObjects:@" album 1", @"aLbum 2",nil];
     
-    NSDictionary *picture = [[NSDictionary alloc] initWithObjectsAndKeys:@"noImage.png",@"img",@"noImage.png",@"img1", nil];
-    NSDictionary *picture1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"noImage.png",@"img",@"noImage.png",@"img1", nil];
+    NSDictionary *picture = [[NSDictionary alloc] initWithObjectsAndKeys:@"noImage.png",@"img", nil];
+    NSDictionary *picture1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"noImage.png",@"img", nil];
     albums = [[NSArray alloc] initWithObjects:picture, picture1,nil];
     
     // Uncomment the following line to preserve selection between presentations.

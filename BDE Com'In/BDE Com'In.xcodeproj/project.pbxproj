@@ -44,6 +44,9 @@
 		9ED8DB73173D910C00F0D22A /* CIAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED8DB71173D910C00F0D22A /* CIAlbum.m */; };
 		9ED8DB74173D910C00F0D22A /* CIAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED8DB72173D910C00F0D22A /* CIAlbum.xib */; };
 		9ED8DB77173D93BB00F0D22A /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED8DB76173D93BB00F0D22A /* NibCell.xib */; };
+		9ED8DB79173EC6EB00F0D22A /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ED8DB78173EC6EA00F0D22A /* thumbnail.png */; };
+		9ED8DB7C173ECD7700F0D22A /* CVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED8DB7B173ECD7700F0D22A /* CVCell.m */; };
+		9ED8DB7E173ED68300F0D22A /* CVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED8DB7D173ED68300F0D22A /* CVCell.xib */; };
 		9EDF644016AB577B00CEC67B /* PSTCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDF642816AB577B00CEC67B /* PSTCollectionView.m */; };
 		9EDF644116AB577B00CEC67B /* PSTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDF642A16AB577B00CEC67B /* PSTCollectionViewCell.m */; };
 		9EDF644216AB577B00CEC67B /* PSTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDF642D16AB577B00CEC67B /* PSTCollectionViewController.m */; };
@@ -132,6 +135,10 @@
 		9ED8DB71173D910C00F0D22A /* CIAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIAlbum.m; sourceTree = "<group>"; };
 		9ED8DB72173D910C00F0D22A /* CIAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIAlbum.xib; sourceTree = "<group>"; };
 		9ED8DB76173D93BB00F0D22A /* NibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
+		9ED8DB78173EC6EA00F0D22A /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		9ED8DB7A173ECD7600F0D22A /* CVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCell.h; sourceTree = "<group>"; };
+		9ED8DB7B173ECD7700F0D22A /* CVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVCell.m; sourceTree = "<group>"; };
+		9ED8DB7D173ED68300F0D22A /* CVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVCell.xib; sourceTree = "<group>"; };
 		9EDF642716AB577B00CEC67B /* PSTCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionView.h; sourceTree = "<group>"; };
 		9EDF642816AB577B00CEC67B /* PSTCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionView.m; sourceTree = "<group>"; };
 		9EDF642916AB577B00CEC67B /* PSTCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewCell.h; sourceTree = "<group>"; };
@@ -298,6 +305,8 @@
 				9ED8DB33173D526300F0D22A /* CITableView.m */,
 				9ED8DB70173D910C00F0D22A /* CIAlbum.h */,
 				9ED8DB71173D910C00F0D22A /* CIAlbum.m */,
+				9ED8DB7A173ECD7600F0D22A /* CVCell.h */,
+				9ED8DB7B173ECD7700F0D22A /* CVCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -338,6 +347,7 @@
 		9EA9F40216A23F66006DC3C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9ED8DB78173EC6EA00F0D22A /* thumbnail.png */,
 				9ED8DB37173D7EEE00F0D22A /* noImage.png */,
 				ADD3979B1716A2C6001AC6C3 /* rp_navbar.png */,
 				ADD397901715BDBD001AC6C3 /* fonts */,
@@ -351,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				9ED8DB76173D93BB00F0D22A /* NibCell.xib */,
+				9ED8DB7D173ED68300F0D22A /* CVCell.xib */,
 			);
 			name = subClass;
 			sourceTree = "<group>";
@@ -504,6 +515,8 @@
 				9ED8DB38173D7EEE00F0D22A /* noImage.png in Resources */,
 				9ED8DB74173D910C00F0D22A /* CIAlbum.xib in Resources */,
 				9ED8DB77173D93BB00F0D22A /* NibCell.xib in Resources */,
+				9ED8DB79173EC6EB00F0D22A /* thumbnail.png in Resources */,
+				9ED8DB7E173ED68300F0D22A /* CVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +557,7 @@
 				9E1BE4691736FE5F005D6AE3 /* CICellCustomAlbum.m in Sources */,
 				9ED8DB35173D526300F0D22A /* CITableView.m in Sources */,
 				9ED8DB73173D910C00F0D22A /* CIAlbum.m in Sources */,
+				9ED8DB7C173ECD7700F0D22A /* CVCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 @interface CIAlbum : UIViewController
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSArray *dataArray;
+@property(nonatomic, retain) NSArray * albums;
 
 - (IBAction)deckMenu:(id)sender;
 
