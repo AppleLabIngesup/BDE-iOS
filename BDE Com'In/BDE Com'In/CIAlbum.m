@@ -59,11 +59,6 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-   
-    
-    
-    
-    
     
     static NSString *cellIdentifier = @"cvCell";
     
@@ -74,10 +69,10 @@
     NSString *cellData = [data objectAtIndex:indexPath.row];
     
     cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"thumbnail.png"]];
-    UILabel *titleLabel = (UILabel *)[cell viewWithTag:100];
+    //UILabel *titleLabel = (UILabel *)[cell viewWithTag:100];
     
-    [titleLabel setText:cellData];
-    cell.picture.image = [UIImage imageNamed:[self.dataArray objectAtIndex:indexPath.row]];
+    //[titleLabel setText:cellData];
+    cell.picture.image = [UIImage imageNamed:[self.dataArray objectAtIndex:cellData]];
     return cell;
     
 }
