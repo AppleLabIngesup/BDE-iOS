@@ -42,7 +42,8 @@
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setItemSize:CGSizeMake(200, 200)];
-    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    //[flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     
     [self.collectionView setCollectionViewLayout:flowLayout];
     
@@ -76,7 +77,13 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     NSMutableArray *sectionArray = [self.dataArray objectAtIndex:section];
-    return [sectionArray count]; }
+    return [sectionArray count];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    printf("Selected View index=%d \r",indexPath.row);
+}
 
 
 - (void)didReceiveMemoryWarning
