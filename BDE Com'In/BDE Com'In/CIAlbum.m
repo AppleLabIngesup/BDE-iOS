@@ -32,15 +32,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    NSMutableArray *firstSection = [[NSMutableArray alloc] init];
+    /*NSMutableArray *firstSection = [[NSMutableArray alloc] init];
     NSMutableArray *secondSection = [[NSMutableArray alloc] init];
     
     for (int i=0; i<50; i++) {
         [firstSection addObject:[NSString stringWithFormat:@"noImage.png %d", i]];
         [secondSection addObject:[NSString stringWithFormat:@"noImage.png %d", i]];
-    }
+    }*/
     
-    self.dataArray = [[NSArray alloc] initWithObjects:firstSection, secondSection, nil];
+    albums = [[NSArray alloc] initWithObjects:@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png", nil];
+    
+    //self.dataArray = [[NSArray alloc] initWithObjects:firstSection, secondSection, nil];
     
     [self.collectionView registerClass:[CVCell class] forCellWithReuseIdentifier:@"cvCell"];
     
@@ -56,6 +58,19 @@
     
 }
 
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    //NSMutableArray *sectionArray = [self.dataArray objectAtIndex:section];
+    return [albums count];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    printf("Selected View index=%d \r",indexPath.row);
+}
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -64,15 +79,16 @@
     
     CVCell *cell =(CVCell *) [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    NSMutableArray *data = [self.dataArray objectAtIndex:indexPath.section];
+    //NSMutableArray *data = [albums objectAtIndex:indexPath.section];
     
-    NSString *cellData = [data objectAtIndex:indexPath.row];
+    //NSString *cellData = [data objectAtIndex:indexPath.row];
     
-    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"thumbnail.png"]];
+    //cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"thumbnail.png"]];
     //UILabel *titleLabel = (UILabel *)[cell viewWithTag:100];
     
     //[titleLabel setText:cellData];
-    cell.picture.image = [UIImage imageNamed:[self.dataArray objectAtIndex:cellData]];
+    //cell.picture.image = [UIImage imageNamed:[albums objectAtIndex:indexPath.item]];
+    [[cell picture] setImage:[UIImage imageNamed:[albums objectAtIndex:indexPath.row]]];
     return cell;
     
 }
@@ -80,19 +96,8 @@
 
 
 
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return [self.dataArray count];
-}
 
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    NSMutableArray *sectionArray = [self.dataArray objectAtIndex:section];
-    return [sectionArray count];
-}
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    printf("Selected View index=%d \r",indexPath.row);
-}
 
 
 - (void)didReceiveMemoryWarning

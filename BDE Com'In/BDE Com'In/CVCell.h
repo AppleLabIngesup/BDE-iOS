@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface CVCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *picture;
 
