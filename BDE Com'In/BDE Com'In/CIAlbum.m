@@ -30,23 +30,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
     
-    /*NSMutableArray *firstSection = [[NSMutableArray alloc] init];
-    NSMutableArray *secondSection = [[NSMutableArray alloc] init];
-    
-    for (int i=0; i<50; i++) {
-        [firstSection addObject:[NSString stringWithFormat:@"noImage.png %d", i]];
-        [secondSection addObject:[NSString stringWithFormat:@"noImage.png %d", i]];
-    }*/
     
     albums = [[NSArray alloc] initWithObjects:@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png", nil];
-    
-    //self.dataArray = [[NSArray alloc] initWithObjects:firstSection, secondSection, nil];
+
     
     [self.collectionView registerClass:[CVCell class] forCellWithReuseIdentifier:@"cvCell"];
     
-    UINib *cellNib = [UINib nibWithNibName:@"NibCell" bundle:nil];
+    UINib *cellNib = [UINib nibWithNibName:@"CVCell" bundle:nil];
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"cvCell"];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -63,7 +55,7 @@
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    //NSMutableArray *sectionArray = [self.dataArray objectAtIndex:section];
+
     return [albums count];
 }
 
@@ -72,33 +64,20 @@
     printf("Selected View index=%d \r",indexPath.row);
 }
 
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+-(CVCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     
     static NSString *cellIdentifier = @"cvCell";
     
-    CVCell *cell =(CVCell *) [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    CVCell *cell = (CVCell *) [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    //NSMutableArray *data = [albums objectAtIndex:indexPath.section];
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"thumbnail.png"]];
     
-    //NSString *cellData = [data objectAtIndex:indexPath.row];
-    
-    //cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"thumbnail.png"]];
-    //UILabel *titleLabel = (UILabel *)[cell viewWithTag:100];
-    
-    //[titleLabel setText:cellData];
-    //cell.picture.image = [UIImage imageNamed:[albums objectAtIndex:indexPath.item]];
-    [[cell picture] setImage:[UIImage imageNamed:[albums objectAtIndex:indexPath.row]]];
+    //[[cell picture] setImage:[UIImage imageNamed:[albums objectAtIndex:indexPath.row]]];
+    cell.picture.image = [UIImage imageNamed:[albums objectAtIndex:indexPath.row]];
     return cell;
     
 }
-
-
-
-
-
-
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -106,10 +85,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewDidUnload {
-    [self setCollectionView:nil];
-    [super viewDidUnload];
-}
 - (IBAction)deckMenu:(id)sender {
     
     [self.viewDeckController toggleLeftViewAnimated:YES];

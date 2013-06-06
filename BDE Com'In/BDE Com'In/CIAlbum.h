@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CIAlbum : UIViewController
+@interface CIAlbum : UIViewController<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSArray *dataArray;
 @property(nonatomic, retain) NSArray * albums;
