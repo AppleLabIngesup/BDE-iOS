@@ -31,9 +31,9 @@
 {
     [super viewDidLoad];
 
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     
-    
-    albums = [[NSArray alloc] initWithObjects:@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png", nil];
+    albums = [[NSArray alloc] initWithObjects:@"img-1.png",@"img-2.png",@"img-3.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png", nil];
 
     
     [self.collectionView registerClass:[CVCell class] forCellWithReuseIdentifier:@"cvCell"];
