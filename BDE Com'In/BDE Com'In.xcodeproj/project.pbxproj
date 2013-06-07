@@ -41,8 +41,6 @@
 		9EA9F3F016A22F12006DC3C2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA9F3EF16A22F12006DC3C2 /* QuartzCore.framework */; };
 		9EA9F3FB16A2375F006DC3C2 /* CICellViewLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9F3FA16A2375F006DC3C2 /* CICellViewLeft.m */; };
 		9EA9F3FD16A2378B006DC3C2 /* CICellViewLeft.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EA9F3FC16A2378B006DC3C2 /* CICellViewLeft.xib */; };
-		9ED8DB35173D526300F0D22A /* CITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED8DB33173D526300F0D22A /* CITableView.m */; };
-		9ED8DB36173D526300F0D22A /* CITableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED8DB34173D526300F0D22A /* CITableView.xib */; };
 		9ED8DB38173D7EEE00F0D22A /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ED8DB37173D7EEE00F0D22A /* noImage.png */; };
 		9ED8DB73173D910C00F0D22A /* CIAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED8DB71173D910C00F0D22A /* CIAlbum.m */; };
 		9ED8DB74173D910C00F0D22A /* CIAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED8DB72173D910C00F0D22A /* CIAlbum.xib */; };
@@ -133,9 +131,6 @@
 		9EA9F3F916A2375F006DC3C2 /* CICellViewLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICellViewLeft.h; sourceTree = "<group>"; };
 		9EA9F3FA16A2375F006DC3C2 /* CICellViewLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICellViewLeft.m; sourceTree = "<group>"; };
 		9EA9F3FC16A2378B006DC3C2 /* CICellViewLeft.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CICellViewLeft.xib; sourceTree = "<group>"; };
-		9ED8DB32173D526300F0D22A /* CITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITableView.h; sourceTree = "<group>"; };
-		9ED8DB33173D526300F0D22A /* CITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITableView.m; sourceTree = "<group>"; };
-		9ED8DB34173D526300F0D22A /* CITableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CITableView.xib; sourceTree = "<group>"; };
 		9ED8DB37173D7EEE00F0D22A /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
 		9ED8DB70173D910C00F0D22A /* CIAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIAlbum.h; sourceTree = "<group>"; };
 		9ED8DB71173D910C00F0D22A /* CIAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIAlbum.m; sourceTree = "<group>"; };
@@ -307,8 +302,6 @@
 				9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */,
 				9E1BE4671736FE5F005D6AE3 /* CICellCustomAlbum.h */,
 				9E1BE4681736FE5F005D6AE3 /* CICellCustomAlbum.m */,
-				9ED8DB32173D526300F0D22A /* CITableView.h */,
-				9ED8DB33173D526300F0D22A /* CITableView.m */,
 				9ED8DB70173D910C00F0D22A /* CIAlbum.h */,
 				9ED8DB71173D910C00F0D22A /* CIAlbum.m */,
 				9ED8DB7A173ECD7600F0D22A /* CVCell.h */,
@@ -321,7 +314,6 @@
 			isa = PBXGroup;
 			children = (
 				9ED8DB72173D910C00F0D22A /* CIAlbum.xib */,
-				9ED8DB34173D526300F0D22A /* CITableView.xib */,
 				9E6A92C616AC4455006EC317 /* CIViewControllerCollectionAlbum.xib */,
 				910F5C2B1702F62200F10889 /* CIViewControllerEvent.xib */,
 				9EA9F3EC16A22E4C006DC3C2 /* CILeftViewController.xib */,
@@ -520,7 +512,6 @@
 				ADD3978F1715B0B9001AC6C3 /* Sketch_Block.ttf in Resources */,
 				ADD3979C1716A2C6001AC6C3 /* rp_navbar.png in Resources */,
 				9E1BE46B1736FF93005D6AE3 /* CICellCustomAlbum.xib in Resources */,
-				9ED8DB36173D526300F0D22A /* CITableView.xib in Resources */,
 				9ED8DB38173D7EEE00F0D22A /* noImage.png in Resources */,
 				9ED8DB74173D910C00F0D22A /* CIAlbum.xib in Resources */,
 				9ED8DB77173D93BB00F0D22A /* NibCell.xib in Resources */,
@@ -567,7 +558,6 @@
 				910F5C301702F8B900F10889 /* iCarousel.m in Sources */,
 				ADD3978B17157072001AC6C3 /* CIViewControllerPartnerview.m in Sources */,
 				9E1BE4691736FE5F005D6AE3 /* CICellCustomAlbum.m in Sources */,
-				9ED8DB35173D526300F0D22A /* CITableView.m in Sources */,
 				9ED8DB73173D910C00F0D22A /* CIAlbum.m in Sources */,
 				9ED8DB7C173ECD7700F0D22A /* CVCell.m in Sources */,
 			);
