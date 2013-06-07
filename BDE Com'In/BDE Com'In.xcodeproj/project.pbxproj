@@ -27,7 +27,6 @@
 		9E54405D16A49F82008E3631 /* CIViewControllerEvenement.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54405B16A49F82008E3631 /* CIViewControllerEvenement.xib */; };
 		9E54406616A4A534008E3631 /* CIViewControllerPartenaires.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */; };
 		9E54406716A4A534008E3631 /* CIViewControllerPartenaires.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */; };
-		9E6A92C816AC4455006EC317 /* CIViewControllerCollectionAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A92C616AC4455006EC317 /* CIViewControllerCollectionAlbum.xib */; };
 		9E832A96176080B400A7F680 /* img-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E832A93176080B400A7F680 /* img-1.png */; };
 		9E832A97176080B400A7F680 /* img-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E832A94176080B400A7F680 /* img-2.png */; };
 		9E832A98176080B400A7F680 /* img-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E832A95176080B400A7F680 /* img-3.png */; };
@@ -109,7 +108,6 @@
 		9E54406316A4A534008E3631 /* CIViewControllerPartenaires.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIViewControllerPartenaires.h; sourceTree = "<group>"; };
 		9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIViewControllerPartenaires.m; sourceTree = "<group>"; };
 		9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerPartenaires.xib; sourceTree = "<group>"; };
-		9E6A92C616AC4455006EC317 /* CIViewControllerCollectionAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerCollectionAlbum.xib; sourceTree = "<group>"; };
 		9E832A93176080B400A7F680 /* img-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-1.png"; sourceTree = "<group>"; };
 		9E832A94176080B400A7F680 /* img-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-2.png"; sourceTree = "<group>"; };
 		9E832A95176080B400A7F680 /* img-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-3.png"; sourceTree = "<group>"; };
@@ -307,7 +305,6 @@
 			isa = PBXGroup;
 			children = (
 				9ED8DB72173D910C00F0D22A /* CIAlbum.xib */,
-				9E6A92C616AC4455006EC317 /* CIViewControllerCollectionAlbum.xib */,
 				910F5C2B1702F62200F10889 /* CIViewControllerEvent.xib */,
 				9EA9F3EC16A22E4C006DC3C2 /* CILeftViewController.xib */,
 				9E54405B16A49F82008E3631 /* CIViewControllerEvenement.xib */,
@@ -484,7 +481,6 @@
 				9E54405816A49CA7008E3631 /* CIViewControllerNews.xib in Resources */,
 				9E54405D16A49F82008E3631 /* CIViewControllerEvenement.xib in Resources */,
 				9E54406716A4A534008E3631 /* CIViewControllerPartenaires.xib in Resources */,
-				9E6A92C816AC4455006EC317 /* CIViewControllerCollectionAlbum.xib in Resources */,
 				910F5C2D1702F62200F10889 /* CIViewControllerEvent.xib in Resources */,
 				AD86874F1713475C0073D89C /* partners.png in Resources */,
 				AD868751171347680073D89C /* photo.png in Resources */,
