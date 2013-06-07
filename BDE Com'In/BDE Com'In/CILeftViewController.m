@@ -12,7 +12,6 @@
 #import "CIViewControllerEvent.h"
 #import "CIViewControllerEvenement.h"
 //#import "CIViewControllerAlbum.h"
-#import "CITableView.h"
 #import "CIAlbum.h"
 #import "CIViewControllerPartenaires.h"
 #import "CIViewController.h"
