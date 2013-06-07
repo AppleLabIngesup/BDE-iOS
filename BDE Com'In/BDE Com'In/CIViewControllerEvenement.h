@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CIViewControllerEvenement : UIViewController
+@property(nonatomic, retain) NSArray *menuDesc;
 - (IBAction)deckMenu:(id)sender;
 
 @end

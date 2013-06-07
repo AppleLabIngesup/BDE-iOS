@@ -19,6 +19,8 @@
 		9179A164169D700500D4E960 /* CIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9179A163169D700500D4E960 /* CIViewController.m */; };
 		9179A167169D700500D4E960 /* CIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9179A165169D700500D4E960 /* CIViewController.xib */; };
 		9179A16F169DBFDD00D4E960 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179A16E169DBFDD00D4E960 /* MapKit.framework */; };
+		9E17504217620DBC0083942A /* CICellEvenement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17504117620DBC0083942A /* CICellEvenement.m */; };
+		9E17504417620DFD0083942A /* CICellEvenement.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E17504317620DFD0083942A /* CICellEvenement.xib */; };
 		9E1BE4691736FE5F005D6AE3 /* CICellCustomAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE4681736FE5F005D6AE3 /* CICellCustomAlbum.m */; };
 		9E1BE46B1736FF93005D6AE3 /* CICellCustomAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E1BE46A1736FF93005D6AE3 /* CICellCustomAlbum.xib */; };
 		9E54405716A49CA7008E3631 /* CIViewControllerNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54405516A49CA7008E3631 /* CIViewControllerNews.m */; };
@@ -96,6 +98,9 @@
 		9179A163169D700500D4E960 /* CIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIViewController.m; sourceTree = "<group>"; };
 		9179A166169D700500D4E960 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CIViewController.xib; sourceTree = "<group>"; };
 		9179A16E169DBFDD00D4E960 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9E17504017620DBC0083942A /* CICellEvenement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICellEvenement.h; sourceTree = "<group>"; };
+		9E17504117620DBC0083942A /* CICellEvenement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICellEvenement.m; sourceTree = "<group>"; };
+		9E17504317620DFD0083942A /* CICellEvenement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CICellEvenement.xib; sourceTree = "<group>"; };
 		9E1BE4671736FE5F005D6AE3 /* CICellCustomAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICellCustomAlbum.h; sourceTree = "<group>"; };
 		9E1BE4681736FE5F005D6AE3 /* CICellCustomAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICellCustomAlbum.m; sourceTree = "<group>"; };
 		9E1BE46A1736FF93005D6AE3 /* CICellCustomAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CICellCustomAlbum.xib; sourceTree = "<group>"; };
@@ -297,6 +302,8 @@
 				9ED8DB71173D910C00F0D22A /* CIAlbum.m */,
 				9ED8DB7A173ECD7600F0D22A /* CVCell.h */,
 				9ED8DB7B173ECD7700F0D22A /* CVCell.m */,
+				9E17504017620DBC0083942A /* CICellEvenement.h */,
+				9E17504117620DBC0083942A /* CICellEvenement.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -314,6 +321,7 @@
 				9179A165169D700500D4E960 /* CIViewController.xib */,
 				9EA9F3FC16A2378B006DC3C2 /* CICellViewLeft.xib */,
 				9E1BE46A1736FF93005D6AE3 /* CICellCustomAlbum.xib */,
+				9E17504317620DFD0083942A /* CICellEvenement.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -507,6 +515,7 @@
 				9E832A96176080B400A7F680 /* img-1.png in Resources */,
 				9E832A97176080B400A7F680 /* img-2.png in Resources */,
 				9E832A98176080B400A7F680 /* img-3.png in Resources */,
+				9E17504417620DFD0083942A /* CICellEvenement.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +555,7 @@
 				9E1BE4691736FE5F005D6AE3 /* CICellCustomAlbum.m in Sources */,
 				9ED8DB73173D910C00F0D22A /* CIAlbum.m in Sources */,
 				9ED8DB7C173ECD7700F0D22A /* CVCell.m in Sources */,
+				9E17504217620DBC0083942A /* CICellEvenement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
