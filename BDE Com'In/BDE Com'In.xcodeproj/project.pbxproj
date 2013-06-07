@@ -25,8 +25,6 @@
 		9E54405816A49CA7008E3631 /* CIViewControllerNews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54405616A49CA7008E3631 /* CIViewControllerNews.xib */; };
 		9E54405C16A49F82008E3631 /* CIViewControllerEvenement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54405A16A49F82008E3631 /* CIViewControllerEvenement.m */; };
 		9E54405D16A49F82008E3631 /* CIViewControllerEvenement.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54405B16A49F82008E3631 /* CIViewControllerEvenement.xib */; };
-		9E54406116A4A16F008E3631 /* CIViewControllerAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54405F16A4A16F008E3631 /* CIViewControllerAlbum.m */; };
-		9E54406216A4A16F008E3631 /* CIViewControllerAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54406016A4A16F008E3631 /* CIViewControllerAlbum.xib */; };
 		9E54406616A4A534008E3631 /* CIViewControllerPartenaires.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */; };
 		9E54406716A4A534008E3631 /* CIViewControllerPartenaires.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */; };
 		9E6A92C816AC4455006EC317 /* CIViewControllerCollectionAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A92C616AC4455006EC317 /* CIViewControllerCollectionAlbum.xib */; };
@@ -108,9 +106,6 @@
 		9E54405916A49F81008E3631 /* CIViewControllerEvenement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIViewControllerEvenement.h; sourceTree = "<group>"; };
 		9E54405A16A49F82008E3631 /* CIViewControllerEvenement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIViewControllerEvenement.m; sourceTree = "<group>"; };
 		9E54405B16A49F82008E3631 /* CIViewControllerEvenement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerEvenement.xib; sourceTree = "<group>"; };
-		9E54405E16A4A16F008E3631 /* CIViewControllerAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIViewControllerAlbum.h; sourceTree = "<group>"; };
-		9E54405F16A4A16F008E3631 /* CIViewControllerAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIViewControllerAlbum.m; sourceTree = "<group>"; };
-		9E54406016A4A16F008E3631 /* CIViewControllerAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerAlbum.xib; sourceTree = "<group>"; };
 		9E54406316A4A534008E3631 /* CIViewControllerPartenaires.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIViewControllerPartenaires.h; sourceTree = "<group>"; };
 		9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIViewControllerPartenaires.m; sourceTree = "<group>"; };
 		9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIViewControllerPartenaires.xib; sourceTree = "<group>"; };
@@ -296,8 +291,6 @@
 				9EA9F3FA16A2375F006DC3C2 /* CICellViewLeft.m */,
 				9179A162169D700500D4E960 /* CIViewController.h */,
 				9179A163169D700500D4E960 /* CIViewController.m */,
-				9E54405E16A4A16F008E3631 /* CIViewControllerAlbum.h */,
-				9E54405F16A4A16F008E3631 /* CIViewControllerAlbum.m */,
 				9E54406316A4A534008E3631 /* CIViewControllerPartenaires.h */,
 				9E54406416A4A534008E3631 /* CIViewControllerPartenaires.m */,
 				9E1BE4671736FE5F005D6AE3 /* CICellCustomAlbum.h */,
@@ -320,7 +313,6 @@
 				9E54405B16A49F82008E3631 /* CIViewControllerEvenement.xib */,
 				ADD3978A17157072001AC6C3 /* CIViewControllerPartnerview.xib */,
 				9E54406516A4A534008E3631 /* CIViewControllerPartenaires.xib */,
-				9E54406016A4A16F008E3631 /* CIViewControllerAlbum.xib */,
 				9E54405616A49CA7008E3631 /* CIViewControllerNews.xib */,
 				9179A165169D700500D4E960 /* CIViewController.xib */,
 				9EA9F3FC16A2378B006DC3C2 /* CICellViewLeft.xib */,
@@ -491,7 +483,6 @@
 				9EA9F3FD16A2378B006DC3C2 /* CICellViewLeft.xib in Resources */,
 				9E54405816A49CA7008E3631 /* CIViewControllerNews.xib in Resources */,
 				9E54405D16A49F82008E3631 /* CIViewControllerEvenement.xib in Resources */,
-				9E54406216A4A16F008E3631 /* CIViewControllerAlbum.xib in Resources */,
 				9E54406716A4A534008E3631 /* CIViewControllerPartenaires.xib in Resources */,
 				9E6A92C816AC4455006EC317 /* CIViewControllerCollectionAlbum.xib in Resources */,
 				910F5C2D1702F62200F10889 /* CIViewControllerEvent.xib in Resources */,
@@ -540,7 +531,6 @@
 				9EA9F3FB16A2375F006DC3C2 /* CICellViewLeft.m in Sources */,
 				9E54405716A49CA7008E3631 /* CIViewControllerNews.m in Sources */,
 				9E54405C16A49F82008E3631 /* CIViewControllerEvenement.m in Sources */,
-				9E54406116A4A16F008E3631 /* CIViewControllerAlbum.m in Sources */,
 				9E54406616A4A534008E3631 /* CIViewControllerPartenaires.m in Sources */,
 				9EDF644016AB577B00CEC67B /* PSTCollectionView.m in Sources */,
 				9EDF644116AB577B00CEC67B /* PSTCollectionViewCell.m in Sources */,

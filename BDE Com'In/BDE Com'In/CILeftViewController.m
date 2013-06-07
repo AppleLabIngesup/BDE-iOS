@@ -11,7 +11,6 @@
 #import "CIViewControllerNews.h"
 #import "CIViewControllerEvent.h"
 #import "CIViewControllerEvenement.h"
-//#import "CIViewControllerAlbum.h"
 #import "CIAlbum.h"
 #import "CIViewControllerPartenaires.h"
 #import "CIViewController.h"
@@ -51,7 +50,7 @@
     //category menu
     NSDictionary *category = [[NSDictionary alloc] initWithObjectsAndKeys:@"Actualité",@"cat",@"news.png",@"img",nil];
     NSDictionary *category1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Évènements",@"cat",@"event.png",@"img",nil];
-    NSDictionary *category2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Photo",@"cat",@"photos.png",@"img",nil];
+    NSDictionary *category2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Photos",@"cat",@"photos.png",@"img",nil];
     NSDictionary *category3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Partenaires",@"cat",@"partners.png",@"img",nil];
     NSDictionary *category4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Accueil",@"cat",@"home.png",@"img",nil];
     
