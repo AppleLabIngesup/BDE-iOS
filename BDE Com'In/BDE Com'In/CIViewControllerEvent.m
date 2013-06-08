@@ -8,6 +8,8 @@
 
 #import "CIViewControllerEvent.h"
 #import "CIViewControllerEvenement.h"
+#import "IIViewDeckController.h"
+#import "CICellViewLeft.h"
 
 @interface CIViewControllerEvent ()
 
@@ -42,6 +44,11 @@
 }
 
 - (IBAction)openPhoto:(id)sender {
+}
+
+- (IBAction)deckMenu:(id)sender {
+    
+    [self.viewDeckController toggleLeftViewAnimated:YES];
 }
 - (void)viewDidUnload {
     [self setDescription:nil];

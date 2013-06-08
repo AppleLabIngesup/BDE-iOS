@@ -15,4 +15,5 @@
 @property (strong, nonatomic) IBOutlet UITextView *description;
 @property (strong, nonatomic) IBOutlet UIImageView *imageEvenement;
 @property (strong, nonatomic) CIViewControllerEvenement *viewController;
+- (IBAction)deckMenu:(id)sender;
 @end

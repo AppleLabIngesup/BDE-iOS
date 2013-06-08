@@ -32,8 +32,6 @@
 {
     [super viewDidLoad];
     
-    [_labelPartners setFont:[UIFont fontWithName:@"freeversionSketchBlock-Bold" size:16.0]];
-    
     NSArray *partnerData = @[
         @{@"name" : @"locaux de google", @"img" : @"Paris 001.jpg"},
         @{@"name" : @"locaux de google", @"img" : @"Paris 002.jpg"},

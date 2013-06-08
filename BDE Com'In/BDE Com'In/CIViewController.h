@@ -15,4 +15,9 @@
 @property (strong, nonatomic) NSMutableArray *animals;
 @property (strong, nonatomic) NSMutableArray *descriptions;
 @property (nonatomic) BOOL wrap;
+
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
+
+
+
 @end

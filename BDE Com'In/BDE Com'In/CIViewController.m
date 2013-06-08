@@ -33,6 +33,7 @@
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
     }
     
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +47,7 @@
 }
 - (void)viewDidUnload {
     [self setCarousel:nil];
+    [self setBackButton:nil];
     [super viewDidUnload];
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
