@@ -10,6 +10,10 @@
 
 @interface CIViewControllerEvenement : UIViewController
 @property(nonatomic, retain) NSArray *menuDesc;
+
 - (IBAction)deckMenu:(id)sender;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *onglets;
+-(IBAction)segementButton:(id)sender;
+@property (strong, nonatomic) IBOutlet UITableView *reTableview;
 
 @end

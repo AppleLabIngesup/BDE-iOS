@@ -17,7 +17,7 @@
 
 @implementation CIViewControllerEvenement
 
-@synthesize menuDesc;
+@synthesize menuDesc, onglets, reTableview;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,21 +28,60 @@
     return self;
 }
 
+
+
+-(IBAction)segementButton:(id)sender{
+
+    switch (onglets.selectedSegmentIndex) {
+        case 0:{
+            NSDictionary *desc = [[NSDictionary alloc] initWithObjectsAndKeys:@"Actualité",@"cat",@"news.png",@"img",nil];
+            NSDictionary *desc1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Évènements",@"cat",@"event.png",@"img",nil];
+            NSDictionary *desc2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Photos",@"cat",@"photos.png",@"img",nil];
+            NSDictionary *desc3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Partenaires",@"cat",@"partners.png",@"img",nil];
+            NSDictionary *desc4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Accueil",@"cat",@"home.png",@"img",nil];
+            
+            //array menu complet
+            menuDesc = [[NSArray alloc] initWithObjects:desc,desc1,desc2,desc3,desc4,nil];
+            [self.reTableview reloadData];
+            break;
+        }
+        case 1:{
+            
+            NSDictionary *desc = [[NSDictionary alloc] initWithObjectsAndKeys:@"Actualité",@"cat",@"news.png",@"img",nil];
+            NSDictionary *desc1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Évènements",@"cat",@"event.png",@"img",nil];
+            NSDictionary *desc4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Accueil",@"cat",@"home.png",@"img",nil];
+            
+            //array menu complet
+            menuDesc = [[NSArray alloc] initWithObjects:desc,desc1,desc4,nil];
+
+            [self.reTableview reloadData];
+            break;
+        }
+        default:
+            NSLog(@"default case => O");
+            break;
+    }
+
+}
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+        
+        NSDictionary *desc = [[NSDictionary alloc] initWithObjectsAndKeys:@"Actualité",@"cat",@"news.png",@"img",nil];
+        NSDictionary *desc1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Évènements",@"cat",@"event.png",@"img",nil];
+        NSDictionary *desc2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Photos",@"cat",@"photos.png",@"img",nil];
+        NSDictionary *desc3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Partenaires",@"cat",@"partners.png",@"img",nil];
+        NSDictionary *desc4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Accueil",@"cat",@"home.png",@"img",nil];
+        
+        //array menu complet
+        menuDesc = [[NSArray alloc] initWithObjects:desc,desc1,desc2,desc3,desc4,nil];
+        
     
-    NSDictionary *desc = [[NSDictionary alloc] initWithObjectsAndKeys:@"Actualité",@"cat",@"news.png",@"img",nil];
-    NSDictionary *desc1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Évènements",@"cat",@"event.png",@"img",nil];
-    NSDictionary *desc2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Photos",@"cat",@"photos.png",@"img",nil];
-    NSDictionary *desc3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Partenaires",@"cat",@"partners.png",@"img",nil];
-    NSDictionary *desc4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Accueil",@"cat",@"home.png",@"img",nil];
-    
-    //array menu complet
-    menuDesc = [[NSArray alloc] initWithObjects:desc,desc1,desc2,desc3,desc4,nil];
-    
-    
-    
+ 
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,6 +105,15 @@
 {
     // Return the number of rows in the section.
     return [menuDesc count];
+    if (onglets.selectedSegmentIndex == 0) {
+        NSLog(@" j'ai beuacoup de %d",[menuDesc count]);
+            return [menuDesc count];
+            
+    }
+    if (onglets.selectedSegmentIndex == 1) {
+                NSLog(@" j'ai beuacoup de %d",[menuDesc count]);
+        return [menuDesc count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -162,5 +210,10 @@
 - (IBAction)deckMenu:(id)sender {
     
     [self.viewDeckController toggleLeftViewAnimated:YES];
+}
+- (void)viewDidUnload {
+    [self setOnglets:nil];
+    [self setReTableview:nil];
+    [super viewDidUnload];
 }
 @end
