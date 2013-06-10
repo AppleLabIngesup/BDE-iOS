@@ -21,6 +21,9 @@
 		9179A16F169DBFDD00D4E960 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179A16E169DBFDD00D4E960 /* MapKit.framework */; };
 		9E17504217620DBC0083942A /* CICellEvenement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17504117620DBC0083942A /* CICellEvenement.m */; };
 		9E17504417620DFD0083942A /* CICellEvenement.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E17504317620DFD0083942A /* CICellEvenement.xib */; };
+		9E17C1CA1765F85400DB6444 /* soiree-poker-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E17C1C71765F85400DB6444 /* soiree-poker-min.png */; };
+		9E17C1CB1765F85400DB6444 /* desc-soiree-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E17C1C81765F85400DB6444 /* desc-soiree-min.png */; };
+		9E17C1CC1765F85400DB6444 /* desc-pizza-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E17C1C91765F85400DB6444 /* desc-pizza-min.png */; };
 		9E1BE4691736FE5F005D6AE3 /* CICellCustomAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE4681736FE5F005D6AE3 /* CICellCustomAlbum.m */; };
 		9E1BE46B1736FF93005D6AE3 /* CICellCustomAlbum.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E1BE46A1736FF93005D6AE3 /* CICellCustomAlbum.xib */; };
 		9E54405716A49CA7008E3631 /* CIViewControllerNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54405516A49CA7008E3631 /* CIViewControllerNews.m */; };
@@ -107,6 +110,9 @@
 		9E17504017620DBC0083942A /* CICellEvenement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICellEvenement.h; sourceTree = "<group>"; };
 		9E17504117620DBC0083942A /* CICellEvenement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICellEvenement.m; sourceTree = "<group>"; };
 		9E17504317620DFD0083942A /* CICellEvenement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CICellEvenement.xib; sourceTree = "<group>"; };
+		9E17C1C71765F85400DB6444 /* soiree-poker-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soiree-poker-min.png"; sourceTree = "<group>"; };
+		9E17C1C81765F85400DB6444 /* desc-soiree-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "desc-soiree-min.png"; sourceTree = "<group>"; };
+		9E17C1C91765F85400DB6444 /* desc-pizza-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "desc-pizza-min.png"; sourceTree = "<group>"; };
 		9E1BE4671736FE5F005D6AE3 /* CICellCustomAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICellCustomAlbum.h; sourceTree = "<group>"; };
 		9E1BE4681736FE5F005D6AE3 /* CICellCustomAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICellCustomAlbum.m; sourceTree = "<group>"; };
 		9E1BE46A1736FF93005D6AE3 /* CICellCustomAlbum.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CICellCustomAlbum.xib; sourceTree = "<group>"; };
@@ -354,6 +360,9 @@
 		9EA9F40216A23F66006DC3C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9E17C1C71765F85400DB6444 /* soiree-poker-min.png */,
+				9E17C1C81765F85400DB6444 /* desc-soiree-min.png */,
+				9E17C1C91765F85400DB6444 /* desc-pizza-min.png */,
 				AD0732811763BA4D002642E0 /* holborn */,
 				9E832A93176080B400A7F680 /* img-1.png */,
 				9E832A94176080B400A7F680 /* img-2.png */,
@@ -548,6 +557,9 @@
 				AD07329C1763E362002642E0 /* 6-black-background@2x.jpg in Resources */,
 				AD07329D1763E362002642E0 /* 6-black-navigation-bar.png in Resources */,
 				AD07329E1763E362002642E0 /* 6-black-navigation-bar@2x.png in Resources */,
+				9E17C1CA1765F85400DB6444 /* soiree-poker-min.png in Resources */,
+				9E17C1CB1765F85400DB6444 /* desc-soiree-min.png in Resources */,
+				9E17C1CC1765F85400DB6444 /* desc-pizza-min.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

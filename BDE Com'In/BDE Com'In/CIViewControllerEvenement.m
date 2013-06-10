@@ -34,11 +34,11 @@
 
     switch (onglets.selectedSegmentIndex) {
         case 0:{
-            NSDictionary *desc = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"news.png",@"img",nil];
-            NSDictionary *desc1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"event.png",@"img",nil];
-            NSDictionary *desc2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"photos.png",@"img",nil];
-            NSDictionary *desc3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"partners.png",@"img",nil];
-            NSDictionary *desc4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"home.png",@"img",nil];
+            NSDictionary *desc = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"soiree-poker-min.png",@"img",nil];
+            NSDictionary *desc1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"desc-soiree-min.png",@"img",nil];
+            NSDictionary *desc2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"desc-pizza-min.png",@"img",nil];
+            NSDictionary *desc3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"desc-soiree-min.png",@"img",nil];
+            NSDictionary *desc4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"desc-soiree-min.png",@"img",nil];
             
             //array menu complet
             menuDesc = [[NSArray alloc] initWithObjects:desc,desc1,desc2,desc3,desc4,nil];
@@ -47,9 +47,9 @@
         }
         case 1:{
             
-            NSDictionary *desc = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"news.png",@"img",nil];
-            NSDictionary *desc1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"event.png",@"img",nil];
-            NSDictionary *desc4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"home.png",@"img",nil];
+            NSDictionary *desc = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"desc-soiree-min.png",@"img",nil];
+            NSDictionary *desc1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"desc-soiree-min.png",@"img",nil];
+            NSDictionary *desc4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"soiree-poker-min",@"img",nil];
             
             //array menu complet
             menuDesc = [[NSArray alloc] initWithObjects:desc,desc1,desc4,nil];
@@ -70,13 +70,12 @@
 {
     [super viewDidLoad];
 
-        
-        NSDictionary *desc = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"news.png",@"img",nil];
-        NSDictionary *desc1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"event.png",@"img",nil];
-        NSDictionary *desc2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"photos.png",@"img",nil];
-        NSDictionary *desc3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"partners.png",@"img",nil];
-        NSDictionary *desc4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"home.png",@"img",nil];
-        
+    NSDictionary *desc = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"soiree-poker-min.png",@"img",nil];
+    NSDictionary *desc1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"desc-soiree-min.png",@"img",nil];
+    NSDictionary *desc2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"desc-pizza-min.png",@"img",nil];
+    NSDictionary *desc3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"desc-soiree-min.png",@"img",nil];
+    NSDictionary *desc4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"Lorem ipsum dolor sit amet, consectetuer adipiscing",@"cat",@"desc-soiree-min.png",@"img",nil];
+    
         //array menu complet
         menuDesc = [[NSArray alloc] initWithObjects:desc,desc1,desc2,desc3,desc4,nil];
         
