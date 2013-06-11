@@ -33,10 +33,10 @@
     [super viewDidLoad];
     
     NSArray *partnerData = @[
-        @{@"name" : @"locaux de google", @"img" : @"Paris 001.jpg"},
-        @{@"name" : @"locaux de google", @"img" : @"Paris 002.jpg"},
-        @{@"name" : @"locaux de google", @"img" : @"Paris 003.jpg"},
-        @{@"name" : @"locaux de google", @"img" : @"Paris 004.jpg"},
+        @{@"name" : @"Domino's", @"img" : @"img1.png"},
+        @{@"name" : @"Golden voyages", @"img" : @"img2.png"},
+        @{@"name" : @"Area Box", @"img" : @"img3.png"},
+        @{@"name" : @"Spotify", @"img" : @"img4.png"},
     ];
     
     CGSize scrollViewSize = CGSizeMake(self.scrollPartners.bounds.size.width, 0);

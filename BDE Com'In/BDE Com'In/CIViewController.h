@@ -7,17 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "iCarousel.h"
 
-@interface CIViewController : UIViewController<iCarouselDataSource, iCarouselDelegate>
-- (IBAction)deckMenu:(id)sender;
-@property (strong, nonatomic) IBOutlet iCarousel *carousel;
-@property (strong, nonatomic) NSMutableArray *animals;
-@property (strong, nonatomic) NSMutableArray *descriptions;
-@property (nonatomic) BOOL wrap;
+@interface CIViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollHome;
+@property (strong, nonatomic) IBOutlet UILabel *labelHome;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
 
-
+- (IBAction)deckMenu:(id)sender;
 
 @end
