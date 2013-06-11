@@ -31,7 +31,8 @@
 {
     [super viewDidLoad];
 
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor clearColor];
+    self.collectionView.opaque = NO;
     
     albums = [[NSArray alloc] initWithObjects:@"img-1.png",@"img-2.png",@"img-3.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png",@"noImage.png", nil];
 
@@ -39,12 +40,12 @@
     [self.collectionView registerClass:[CVCell class] forCellWithReuseIdentifier:@"cvCell"];
     
     UINib *cellNib = [UINib nibWithNibName:@"CVCell" bundle:nil];
+    
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"cvCell"];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    [flowLayout setItemSize:CGSizeMake(150, 150)];
+    [flowLayout setItemSize:CGSizeMake(100, 100)];
     
-    //[flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     [self.collectionView setCollectionViewLayout:flowLayout];
     

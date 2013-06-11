@@ -33,15 +33,15 @@
                                                            [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8],UITextAttributeTextShadowColor,
                                                            [NSValue valueWithUIOffset:UIOffsetMake(0, 1)],
                                                            UITextAttributeTextShadowOffset,
-                                                           [UIFont fontWithName:@"freeversionSketchBlock-Bold" size:18.0], UITextAttributeFont, nil]];
+                                                           [UIFont fontWithName:@"freeversionSketchBlock-Bold" size:20.0], UITextAttributeFont, nil]];
     
-    UIImage *backButtonImage = [[UIImage imageNamed:@"6-black-back-buttton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
-    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    //UIImage *backButtonImage = [[UIImage imageNamed:@"6-black-back-buttton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
+    //[[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
 
-    UIImage *navBar = [[UIImage imageNamed:@"6-black-navigation-bar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
+    UIImage *navBar = [[UIImage imageNamed:@"uinav.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
     [[UINavigationBar appearance] setBackgroundImage:navBar forBarMetrics:UIBarMetricsDefault];
     
-    [self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"6-black-background.jpg"]]];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
 
     self.window.rootViewController = deckController;
     [self.window makeKeyAndVisible];
