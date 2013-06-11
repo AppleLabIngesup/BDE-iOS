@@ -38,9 +38,6 @@
     
     _imageHome.layer.cornerRadius = 5.0f;
     _imageHome.layer.masksToBounds = YES;
-    
-    //_imageHome.layer.borderColor = [UIColor grayColor].CGColor;
-    //_imageHome.layer.borderWidth = 1;
 }
 
 - (void)didReceiveMemoryWarning

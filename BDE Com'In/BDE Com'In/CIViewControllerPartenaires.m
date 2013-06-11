@@ -33,10 +33,10 @@
     [super viewDidLoad];
     
     NSArray *partnerData = @[
-        @{@"name" : @"Domino's", @"img" : @"img1.png"},
-        @{@"name" : @"Golden voyages", @"img" : @"img2.png"},
-        @{@"name" : @"Area Box", @"img" : @"img3.png"},
-        @{@"name" : @"Spotify", @"img" : @"img4.png"},
+    @{@"name" : @"Domino's", @"img" : @"img1.png", @"description" : @"La pizza 4 personnes à 8€ en livraison à partir de 10 commandes. Contactez nous 48h avant avec votre liste de pizzas et nous commanderons pour vous ! Domino's Rue des pyrénées."},
+        @{@"name" : @"Golden voyages", @"img" : @"img2.png", @"description" : @"C'est grâce à eux que nous vous proposons tous ces voyages !"},
+        @{@"name" : @"Area Box", @"img" : @"img3.png", @"description" : @"Area Box est une agence de communication événementielle, de promotion d’événements et spectacles vivants, située dans le 10éme arrondissement de Paris. Notre agence est à votre écoute pour concevoir et mettre en place tous vos projets."},
+    @{@"name" : @"Spotify", @"img" : @"img4.png", @"description" : @"Inscrivez-vous, il y a plein de lots à gagner ^^ Création de compte ici : http://www.spotify.com/fr/start"},
     ];
     
     CGSize scrollViewSize = CGSizeMake(self.scrollPartners.bounds.size.width, 0);
@@ -52,6 +52,8 @@
         [vc.titlePartner setFont:[UIFont fontWithName:@"freeversionSketchBlock-Bold" size:26.0]];
         [vc.titlePartner setText:d[@"name"]];
         [vc.imgPartner setImage:[UIImage imageNamed:d[@"img"]]];
+        [vc.contentPartner setText:d[@"description"]];
+        
         scrollViewSize.height += vc.view.frame.size.height + 8;
     }
     
